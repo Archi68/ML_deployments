@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     logging: LoggingSettings = LoggingSettings()
 
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = [
-        "http://localhost:3000",   # type: ignore
-        "http://localhost:8000",   # type: ignore
+        "http://localhost:3000",  # type: ignore
+        "http://localhost:8000",  # type: ignore
         "https://localhost:3000",  # type: ignore
         "https://localhost:8000",  # type: ignore
     ]
@@ -27,6 +27,7 @@ class Settings(BaseSettings):
 
     class Config:
         case_sensitive = True
+
 
 class InterseptHandler(logging.Handler):
 
@@ -47,7 +48,6 @@ class InterseptHandler(logging.Handler):
 
 
 def setup_app_logging(config: Settings) -> None:
-
     LOGGERS = ("uvicorn.asgi", "uvicorn.access")
 
     logging.getLogger().handlers = [InterseptHandler()]
@@ -58,14 +58,13 @@ def setup_app_logging(config: Settings) -> None:
         logging_logger.handlers = [InterseptHandler(level=config.logging.LOGGING_LEVEL)]
 
     logger.configure(
-        handlers = [
+        handlers=[
             {
                 "sink": sys.stderr,
                 "level": config.logging.LOGGING_LEVEL
             }
         ]
     )
-
 
 
 settings = Settings()
