@@ -1,27 +1,31 @@
 import sys
 
-sys.path.append("C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\titanic_dataset\\")
+sys.path.append(
+    # "C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\titanic_dataset\\"
+    "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/titanic_dataset/"
+)
 
 import numpy as np
 from sklearn.metrics import accuracy_score
+
 from classification_model.predict import make_prediction
 
+
 def test_make_prediction(sample_input_data):
+    # Given
+    expected_no_predictions = 131
 
-    #Given
-    expexted_no_predictions = 131
-
-    #When
+    # When
     result = make_prediction(input_data=sample_input_data)
 
-    #Then
+    # Then
     predictions = result.get("predictions")
 
-    assert isinstance((predictions, np.ndarray))
+    assert isinstance(predictions, np.ndarray)
     assert isinstance(predictions[0], np.int64)
     assert result.get("errors") is None
     assert len(predictions) == expected_no_predictions
-    _predictions - list(predictions)
+    _predictions = list(predictions)
     y_true = sample_input_data["survived"]
     accuracy = accuracy_score(_predictions, y_true)
 

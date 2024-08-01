@@ -1,5 +1,5 @@
-from logging import RootLogger
 from typing import Any
+
 from fastapi import APIRouter, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
@@ -12,7 +12,6 @@ setup_app_logging(config=settings)
 
 app = FastAPI(
     title=settings.PROJECT_NAME, openapi_url=f"{settings.API_V1_STR}/openapi.json"
-
 )
 
 root_router = APIRouter()
@@ -43,11 +42,12 @@ if settings.BACKEND_CORS_ORIGINS:
         allow_origins=[str(origin) for origin in settings.BACKEND_CORS_ORIGINS],
         allow_credentials=True,
         allow_methods=["*"],
-        allow_headers=["*"]
+        allow_headers=["*"],
     )
 
 if __name__ == "__main__":
     logger.warning("Running in development mode. Do not run like this in production")
+
     import uvicorn
 
-    uvicorn.run(app, host="localhost", port=8001, log_level='debug')
+    uvicorn.run(app, host="localhost", port=8001, log_level="debug")

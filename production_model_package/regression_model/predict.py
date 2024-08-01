@@ -1,7 +1,7 @@
-import sys
+'''import sys
 
 sys.path.append("C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\production_model_package")
-
+'''
 import typing as t
 import numpy as np
 import pandas as pd

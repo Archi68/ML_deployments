@@ -2,11 +2,10 @@ import sys
 
 sys.path.append(
     "C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\serve_and_deploy_via_REST_API"
-    "\\houseprice_api\\"
+    "\\houseprice_api_old\\"
 )
 
 import json
-
 from typing import Any
 
 import numpy as np
@@ -26,9 +25,7 @@ api_router = APIRouter()
 @api_router.get("/health", response_model=schemas.Health, status_code=200)
 def health() -> dict:
     health = schemas.Health(
-        name=settings.PROJECT_NAME,
-        api_version=__version__,
-        model_version=model_version
+        name=settings.PROJECT_NAME, api_version=__version__, model_version=model_version
     )
 
     return health.dict()
@@ -40,9 +37,9 @@ async def predict(input_data: schemas.MultipleHouseDataInputs) -> Any:
 
     logger.info(f"Making prediction on inputs: {input_data.inputs}")
     results = make_prediction(input_data=input_df.replace({np.nan: None}))
+
     if results["errors"] is not None:
         logger.warning(f"Prediction validation error: {results.get('errors')}")
-
         raise HTTPException(status_code=200, detail=json.loads(results["errors"]))
 
     logger.info(f"Prediction results: {results.get('predictions')}")

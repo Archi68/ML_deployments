@@ -1,10 +1,12 @@
 import sys
+
 sys.path.append(
     "C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\serve_and_deploy_via_REST_API"
-    "\\houseprice_api\\"
+    "\\houseprice_api_old\\"
 )
 
 from typing import Any
+
 from fastapi import APIRouter, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
@@ -52,6 +54,7 @@ if settings.BACKEND_CORS_ORIGINS:
 
 if __name__ == "__main__":
     logger.warning("Running in development mode. Do not run like this in production")
+
     import uvicorn
 
     uvicorn.run(app, host="localhost", port=8001, log_level="debug")

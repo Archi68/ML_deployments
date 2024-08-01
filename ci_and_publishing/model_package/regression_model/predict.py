@@ -1,3 +1,7 @@
+'''import sys
+
+sys.path.append("C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\production_model_package")
+'''
 import typing as t
 import numpy as np
 import pandas as pd
@@ -26,7 +30,7 @@ def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
     if not errors:
         predictions = _price_pipe.predict(X=validated_data[config.model_config.features])
         results = {
-            'predictions': [np.exp(pred) for pred in predictions],  # type: ignore
+            'predictions': [np.exp(pred) for pred in predictions],
             'version': _version,
             'errors': errors
         }

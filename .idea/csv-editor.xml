@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="\ci_and_publishing\model_package\regression_model\datasets\test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\production_model_package\regression_model\datasets\test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\production_model_package\regression_model\datasets\train.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\serve_and_deploy_via_REST_API\titanic_api\.tox\test_app\Lib\site-packages\statsmodels\tsa\tests\results\arima111_forecasts.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\serve_and_deploy_via_REST_API\titanic_api\.tox\test_app\Lib\site-packages\statsmodels\tsa\tests\results\arima212_forecast.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\serve_and_deploy_via_REST_API\titanic_api\.tox\test_app\Lib\site-packages\statsmodels\tsa\tests\results\results_ar_forecast_mle_dynamic.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\serve_and_deploy_via_REST_API\titanic_api\.tox\test_app\Lib\site-packages\statsmodels\tsa\tests\results\results_arima_exog_forecasts_css.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\serve_and_deploy_via_REST_API\titanic_api\.tox\test_app\Lib\site-packages\statsmodels\tsa\tests\results\results_arima_exog_forecasts_mle.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

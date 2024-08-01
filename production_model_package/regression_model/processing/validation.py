@@ -1,6 +1,7 @@
-import sys
+'''import sys
 
 sys.path.append('C:/Users/Irek9/OneDrive/Документы/KV_DW_JL_5/ML_deployments/production_model_package')
+'''
 from typing import List, Optional, Tuple
 import pandas as pd
 import numpy as np

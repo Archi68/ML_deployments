@@ -1,96 +1,122 @@
 name: train
 run_id: install_deps
-env COMSPEC: C:\WINDOWS\system32\cmd.exe
+env COMSPEC: C:\Windows\system32\cmd.exe
 env NUMBER_OF_PROCESSORS: 12
 env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 env PROCESSOR_ARCHITECTURE: AMD64
 env PROGRAMDATA: C:\ProgramData
 env PROGRAMFILES: C:\Program Files
 env PROGRAMFILES(X86): C:\Program Files (x86)
+env SSL_CERT_FILE: C:\ProgramData\anaconda3\Library\ssl\cacert.pem
 env SYSTEMDRIVE: C:
-env SYSTEMROOT: C:\WINDOWS
-env TEMP: C:\Users\Irek9\AppData\Local\Temp
-env TMP: C:\Users\Irek9\AppData\Local\Temp
-env USERPROFILE: C:\Users\Irek9
-env PATH: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package\Scripts;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\mingw-w64\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\usr\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Scripts;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\bin;C:\Users\Irek9\anaconda3\condabin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;"C:\Users\Irek9\anaconda3;C:\Users\Irek9\anaconda3\Library\mingw-w64\bin;C:\Users\Irek9\anaconda3\Library\usr\bin;C:\Users\Irek9\anaconda3\Library\bin;C:\Users\Irek9\anaconda3\Scripts;";C:\Users\Irek9\AppData\Local\Microsoft\WindowsApps;"C:\WINDOWS\system32;C:\Program Files\JetBrains\PyCharm Community Edition 2023.2\bin
-env PYTHONHASHSEED: 459
+env SYSTEMROOT: C:\Windows
+env TEMP: C:\Users\USER\AppData\Local\Temp
+env TMP: C:\Users\USER\AppData\Local\Temp
+env USERPROFILE: C:\Users\USER
+env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;C:\Users\USER\AppData\Local\GitHubDesktop\bin
+env PYTHONHASHSEED: 89
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
 env TOX_ENV_NAME: train
-env TOX_WORK_DIR: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox
-env TOX_ENV_DIR: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package
-env VIRTUAL_ENV: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package
-env COLUMNS: 141
+env TOX_WORK_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox
+env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package
+env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package
+env COLUMNS: 120
 env LINES: 30
-metadata pid: 10296
-cwd: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset
-allow: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package\Scripts\*
+metadata pid: 16216
+cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset
+allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\titanic_dataset\.tox\test_package\Scripts\*
 cmd: pip install -r requirements/test_requirements.txt
 exit_code: 0
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
 Collecting numpy==1.24.3 (from -r requirements\requirements.txt (line 1))
-  Using cached numpy-1.24.3-cp311-cp311-win_amd64.whl (14.8 MB)
+  Downloading numpy-1.24.3-cp311-cp311-win_amd64.whl.metadata (5.6 kB)
 Collecting pandas==2.0.2 (from -r requirements\requirements.txt (line 2))
-  Obtaining dependency information for pandas==2.0.2 from https://files.pythonhosted.org/packages/ee/fd/a3b5f229e5098e18cb058549f9c2842f407023adb47aa6b22b44b15988c6/pandas-2.0.2-cp311-cp311-win_amd64.whl.metadata
-  Using cached pandas-2.0.2-cp311-cp311-win_amd64.whl.metadata (18 kB)
-Collecting pydantic==1.10.8 (from -r requirements\requirements.txt (line 5))
-  Obtaining dependency information for pydantic==1.10.8 from https://files.pythonhosted.org/packages/a7/27/80672dfb14e47293cca421580141ec923a1e5fe7283f775079e006b0be28/pydantic-1.10.8-cp311-cp311-win_amd64.whl.metadata
-  Using cached pydantic-1.10.8-cp311-cp311-win_amd64.whl.metadata (147 kB)
-Collecting scikit-learn==1.2.2 (from -r requirements\requirements.txt (line 7))
-  Using cached scikit_learn-1.2.2-cp311-cp311-win_amd64.whl (8.3 MB)
-Collecting strictyaml==1.7.3 (from -r requirements\requirements.txt (line 9))
-  Using cached strictyaml-1.7.3-py3-none-any.whl (123 kB)
-Collecting ruamel.yaml==0.17.28 (from -r requirements\requirements.txt (line 10))
-  Obtaining dependency information for ruamel.yaml==0.17.28 from https://files.pythonhosted.org/packages/22/e8/3e4687ceedef0a650a9d33d3a0f87d5e2d1b9a5d50181b87f128fff53420/ruamel.yaml-0.17.28-py3-none-any.whl.metadata
-  Using cached ruamel.yaml-0.17.28-py3-none-any.whl.metadata (16 kB)
-Collecting feature_engine==1.6.0 (from -r requirements\requirements.txt (line 12))
-  Using cached feature_engine-1.6.0-py2.py3-none-any.whl (319 kB)
-Collecting joblib==1.2.0 (from -r requirements\requirements.txt (line 14))
-  Using cached joblib-1.2.0-py3-none-any.whl (297 kB)
+  Downloading pandas-2.0.2-cp311-cp311-win_amd64.whl.metadata (18 kB)
+Collecting pydantic==1.10.8 (from -r requirements\requirements.txt (line 4))
+  Downloading pydantic-1.10.8-cp311-cp311-win_amd64.whl.metadata (147 kB)
+     ---------------------------------------- 147.7/147.7 kB 2.9 MB/s eta 0:00:00
+Collecting scikit-learn==1.2.2 (from -r requirements\requirements.txt (line 6))
+  Downloading scikit_learn-1.2.2-cp311-cp311-win_amd64.whl.metadata (11 kB)
+Collecting strictyaml==1.7.3 (from -r requirements\requirements.txt (line 8))
+  Downloading strictyaml-1.7.3-py3-none-any.whl.metadata (11 kB)
+Collecting ruamel.yaml==0.17.28 (from -r requirements\requirements.txt (line 9))
+  Downloading ruamel.yaml-0.17.28-py3-none-any.whl.metadata (16 kB)
+Collecting feature_engine==1.6.0 (from -r requirements\requirements.txt (line 11))
+  Downloading feature_engine-1.6.0-py2.py3-none-any.whl.metadata (8.7 kB)
+Collecting joblib==1.2.0 (from -r requirements\requirements.txt (line 13))
+  Downloading joblib-1.2.0-py3-none-any.whl.metadata (5.3 kB)
 Collecting pytest<8.0.0,>=7.2.0 (from -r requirements/test_requirements.txt (line 3))
-  Obtaining dependency information for pytest<8.0.0,>=7.2.0 from https://files.pythonhosted.org/packages/df/d0/e192c4275aecabf74faa1aacd75ef700091913236ec78b1a98f62a2412ee/pytest-7.4.2-py3-none-any.whl.metadata
-  Using cached pytest-7.4.2-py3-none-any.whl.metadata (7.9 kB)
+  Downloading pytest-7.4.4-py3-none-any.whl.metadata (7.9 kB)
 Collecting python-dateutil>=2.8.2 (from pandas==2.0.2->-r requirements\requirements.txt (line 2))
-  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
 Collecting pytz>=2020.1 (from pandas==2.0.2->-r requirements\requirements.txt (line 2))
-  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl.metadata
-  Using cached pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+  Downloading pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
 Collecting tzdata>=2022.1 (from pandas==2.0.2->-r requirements\requirements.txt (line 2))
-  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
-Collecting typing-extensions>=4.2.0 (from pydantic==1.10.8->-r requirements\requirements.txt (line 5))
-  Obtaining dependency information for typing-extensions>=4.2.0 from https://files.pythonhosted.org/packages/24/21/7d397a4b7934ff4028987914ac1044d3b7d52712f30e2ac7a2ae5bc86dd0/typing_extensions-4.8.0-py3-none-any.whl.metadata
-  Using cached typing_extensions-4.8.0-py3-none-any.whl.metadata (3.0 kB)
-Collecting scipy>=1.3.2 (from scikit-learn==1.2.2->-r requirements\requirements.txt (line 7))
-  Obtaining dependency information for scipy>=1.3.2 from https://files.pythonhosted.org/packages/06/15/e73734f9170b66c6a84a0bd7e03586e87e77404e2eb8e34749fc49fa43f7/scipy-1.11.2-cp311-cp311-win_amd64.whl.metadata
-  Using cached scipy-1.11.2-cp311-cp311-win_amd64.whl.metadata (59 kB)
-Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->-r requirements\requirements.txt (line 7))
-  Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/81/12/fd4dea011af9d69e1cad05c75f3f7202cdcbeac9b712eea58ca779a72865/threadpoolctl-3.2.0-py3-none-any.whl.metadata
-  Using cached threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
-Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml==0.17.28->-r requirements\requirements.txt (line 10))
-  Using cached ruamel.yaml.clib-0.2.7-cp311-cp311-win_amd64.whl (101 kB)
-Collecting statsmodels>=0.11.1 (from feature_engine==1.6.0->-r requirements\requirements.txt (line 12))
-  Using cached statsmodels-0.14.0-cp311-cp311-win_amd64.whl (9.2 MB)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting typing-extensions>=4.2.0 (from pydantic==1.10.8->-r requirements\requirements.txt (line 4))
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting scipy>=1.3.2 (from scikit-learn==1.2.2->-r requirements\requirements.txt (line 6))
+  Downloading scipy-1.14.0-cp311-cp311-win_amd64.whl.metadata (60 kB)
+     ---------------------------------------- 60.8/60.8 kB ? eta 0:00:00
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->-r requirements\requirements.txt (line 6))
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml==0.17.28->-r requirements\requirements.txt (line 9))
+  Downloading ruamel.yaml.clib-0.2.8-cp311-cp311-win_amd64.whl.metadata (2.3 kB)
+Collecting statsmodels>=0.11.1 (from feature_engine==1.6.0->-r requirements\requirements.txt (line 11))
+  Downloading statsmodels-0.14.2-cp311-cp311-win_amd64.whl.metadata (9.5 kB)
 Collecting iniconfig (from pytest<8.0.0,>=7.2.0->-r requirements/test_requirements.txt (line 3))
-  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+  Downloading iniconfig-2.0.0-py3-none-any.whl.metadata (2.6 kB)
 Collecting packaging (from pytest<8.0.0,>=7.2.0->-r requirements/test_requirements.txt (line 3))
-  Using cached packaging-23.1-py3-none-any.whl (48 kB)
+  Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
 Collecting pluggy<2.0,>=0.12 (from pytest<8.0.0,>=7.2.0->-r requirements/test_requirements.txt (line 3))
-  Obtaining dependency information for pluggy<2.0,>=0.12 from https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl.metadata
-  Using cached pluggy-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+  Downloading pluggy-1.5.0-py3-none-any.whl.metadata (4.8 kB)
 Collecting colorama (from pytest<8.0.0,>=7.2.0->-r requirements/test_requirements.txt (line 3))
-  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
 Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.2->-r requirements\requirements.txt (line 2))
-  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature_engine==1.6.0->-r requirements\requirements.txt (line 12))
-  Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
-Using cached pandas-2.0.2-cp311-cp311-win_amd64.whl (10.6 MB)
-Using cached pydantic-1.10.8-cp311-cp311-win_amd64.whl (2.1 MB)
-Using cached ruamel.yaml-0.17.28-py3-none-any.whl (109 kB)
-Using cached pytest-7.4.2-py3-none-any.whl (324 kB)
-Using cached pluggy-1.3.0-py3-none-any.whl (18 kB)
-Using cached pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
-Using cached scipy-1.11.2-cp311-cp311-win_amd64.whl (44.0 MB)
-Using cached threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
-Using cached typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting patsy>=0.5.6 (from statsmodels>=0.11.1->feature_engine==1.6.0->-r requirements\requirements.txt (line 11))
+  Downloading patsy-0.5.6-py2.py3-none-any.whl.metadata (3.5 kB)
+Downloading numpy-1.24.3-cp311-cp311-win_amd64.whl (14.8 MB)
+   ---------------------------------------- 14.8/14.8 MB 11.5 MB/s eta 0:00:00
+Downloading pandas-2.0.2-cp311-cp311-win_amd64.whl (10.6 MB)
+   ---------------------------------------- 10.6/10.6 MB 11.7 MB/s eta 0:00:00
+Downloading pydantic-1.10.8-cp311-cp311-win_amd64.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 12.1 MB/s eta 0:00:00
+Downloading scikit_learn-1.2.2-cp311-cp311-win_amd64.whl (8.3 MB)
+   ---------------------------------------- 8.3/8.3 MB 11.5 MB/s eta 0:00:00
+Downloading strictyaml-1.7.3-py3-none-any.whl (123 kB)
+   ---------------------------------------- 123.9/123.9 kB ? eta 0:00:00
+Downloading ruamel.yaml-0.17.28-py3-none-any.whl (109 kB)
+   ---------------------------------------- 109.6/109.6 kB 6.2 MB/s eta 0:00:00
+Downloading feature_engine-1.6.0-py2.py3-none-any.whl (319 kB)
+   ---------------------------------------- 319.4/319.4 kB 9.7 MB/s eta 0:00:00
+Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
+   ---------------------------------------- 298.0/298.0 kB 18.0 MB/s eta 0:00:00
+Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+   ---------------------------------------- 325.3/325.3 kB 10.2 MB/s eta 0:00:00
+Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ---------------------------------------- 229.9/229.9 kB 13.7 MB/s eta 0:00:00
+Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+   ---------------------------------------- 505.5/505.5 kB 10.5 MB/s eta 0:00:00
+Downloading ruamel.yaml.clib-0.2.8-cp311-cp311-win_amd64.whl (118 kB)
+   ---------------------------------------- 118.0/118.0 kB ? eta 0:00:00
+Downloading scipy-1.14.0-cp311-cp311-win_amd64.whl (44.7 MB)
+   ---------------------------------------- 44.7/44.7 MB 11.5 MB/s eta 0:00:00
+Downloading statsmodels-0.14.2-cp311-cp311-win_amd64.whl (9.9 MB)
+   ---------------------------------------- 9.9/9.9 MB 11.7 MB/s eta 0:00:00
+Downloading packaging-24.1-py3-none-any.whl (53 kB)
+   ---------------------------------------- 54.0/54.0 kB ? eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+   ---------------------------------------- 345.4/345.4 kB 10.5 MB/s eta 0:00:00
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Downloading patsy-0.5.6-py2.py3-none-any.whl (233 kB)
+   ---------------------------------------- 233.9/233.9 kB 14.0 MB/s eta 0:00:00
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
 Installing collected packages: pytz, tzdata, typing-extensions, threadpoolctl, six, ruamel.yaml.clib, pluggy, packaging, numpy, joblib, iniconfig, colorama, scipy, ruamel.yaml, python-dateutil, pytest, pydantic, patsy, strictyaml, scikit-learn, pandas, statsmodels, feature_engine
-Successfully installed colorama-0.4.6 feature_engine-1.6.0 iniconfig-2.0.0 joblib-1.2.0 numpy-1.24.3 packaging-23.1 pandas-2.0.2 patsy-0.5.3 pluggy-1.3.0 pydantic-1.10.8 pytest-7.4.2 python-dateutil-2.8.2 pytz-2023.3.post1 ruamel.yaml-0.17.28 ruamel.yaml.clib-0.2.7 scikit-learn-1.2.2 scipy-1.11.2 six-1.16.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.2.0 typing-extensions-4.8.0 tzdata-2023.3
+Successfully installed colorama-0.4.6 feature_engine-1.6.0 iniconfig-2.0.0 joblib-1.2.0 numpy-1.24.3 packaging-24.1 pandas-2.0.2 patsy-0.5.6 pluggy-1.5.0 pydantic-1.10.8 pytest-7.4.4 python-dateutil-2.9.0.post0 pytz-2024.1 ruamel.yaml-0.17.28 ruamel.yaml.clib-0.2.8 scikit-learn-1.2.2 scipy-1.14.0 six-1.16.0 statsmodels-0.14.2 strictyaml-1.7.3 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1

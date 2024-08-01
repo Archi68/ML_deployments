@@ -1,80 +1,77 @@
 name: run1
 run_id: commands[0]
-env COMSPEC: C:\WINDOWS\system32\cmd.exe
-env NUMBER_OF_PROCESSORS: 12
-env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
-env PROCESSOR_ARCHITECTURE: AMD64
-env PROGRAMDATA: C:\ProgramData
-env PROGRAMFILES: C:\Program Files
+env SSL_CERT_FILE: C:\ProgramData\anaconda3\envs\ml_deployment\Library\ssl\cacert.pem
+env USERPROFILE: C:\Users\USER
+env SYSTEMROOT: C:\Windows
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
 env PROGRAMFILES(X86): C:\Program Files (x86)
+env PROCESSOR_ARCHITECTURE: AMD64
+env NUMBER_OF_PROCESSORS: 12
+env COMSPEC: C:\Windows\system32\cmd.exe
+env PROGRAMFILES: C:\Program Files
+env TMP: C:\Users\USER\AppData\Local\Temp
+env TEMP: C:\Users\USER\AppData\Local\Temp
 env SYSTEMDRIVE: C:
-env SYSTEMROOT: C:\WINDOWS
-env TEMP: C:\Users\Irek9\AppData\Local\Temp
-env TMP: C:\Users\Irek9\AppData\Local\Temp
-env USERPROFILE: C:\Users\Irek9
-env PATH: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Scripts;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\mingw-w64\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\usr\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Library\bin;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\Scripts;C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment\bin;C:\Users\Irek9\anaconda3\condabin;C:\Python311\Scripts;C:\Python311;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;"C:\Users\Irek9\anaconda3;C:\Users\Irek9\anaconda3\Library\mingw-w64\bin;C:\Users\Irek9\anaconda3\Library\usr\bin;C:\Users\Irek9\anaconda3\Library\bin;C:\Users\Irek9\anaconda3\Scripts;";C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Irek9\scoop\shims;C:\Users\Irek9\AppData\Local\Microsoft\WindowsApps;"C:\WINDOWS\system32;C:\Program Files\JetBrains\PyCharm Community Edition 2023.2\bin;C:\Users\Irek9\AppData\Roaming\npm;C:\Users\Irek9\AppData\Local\GitHubDesktop\bin
-env PYTHONHASHSEED: 567
+env PROGRAMDATA: C:\ProgramData
+env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;.;C:\Users\USER\AppData\Local\GitHubDesktop\bin
+env PYTHONHASHSEED: 824
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
 env TOX_ENV_NAME: run1
-env TOX_WORK_DIR: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox
-env TOX_ENV_DIR: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app
-env VIRTUAL_ENV: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app
-env COLUMNS: 120
-env LINES: 30
-metadata pid: 31036
-cwd: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api
-allow: C:\Users\Irek9\OneDrive\Документы\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Scripts\*
+env TOX_WORK_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox
+env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app
+env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app
+env COLUMNS: 161
+env LINES: 9
+metadata pid: 24380
+cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api
+allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Scripts\*
 cmd: python app/main.py
-exit_code: 0
-INFO:     ::1:57474 - "GET / HTTP/1.1" 200 OK
-INFO:     ::1:57475 - "GET /docs HTTP/1.1" 200 OK
-INFO:     ::1:57475 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
-INFO:     ::1:57481 - "GET /api/v1/health HTTP/1.1" 200 OK
-INFO:     ::1:57491 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57495 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57502 - "GET / HTTP/1.1" 200 OK
-INFO:     ::1:57509 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57511 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57514 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57515 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57518 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57519 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57525 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57526 - "POST /api/v1/predict HTTP/1.1" 200 OK
-INFO:     ::1:57548 - "GET /api/v1/health HTTP/1.1" 200 OK
-INFO:     ::1:57549 - "GET /api/v1/predict HTTP/1.1" 405 Method Not Allowed
-INFO:     ::1:57558 - "GET /api/v1 HTTP/1.1" 404 Not Found
-INFO:     ::1:57563 - "GET / HTTP/1.1" 200 OK
+exit_code: 3221225786
+INFO:     ::1:65513 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:65513 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:65513 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     ::1:65514 - "POST /api/v1/predict HTTP/1.1" 200 OK
+INFO:     ::1:49250 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:50108 - "POST /api/v1/predict HTTP/1.1" 200 OK
 
 standard error:
-2023-10-15 16:34:45.805 | WARNING  | __main__:<module>:54 - Running in development mode. Do not run like this in production
-INFO:     Started server process [2624]
+2024-08-01 15:03:27.890 | WARNING  | __main__:<module>:56 - Running in development mode. Do not run like this in production
+INFO:     Started server process [24124]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
-2023-10-15 16:35:38.486 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:35:38.561 | INFO     | app.api:predict:48 - Prediction results: [113422.55344864173]
-2023-10-15 16:36:16.298 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=1, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:36:16.348 | INFO     | app.api:predict:48 - Prediction results: [92063.22507096747]
-2023-10-15 16:37:19.466 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=1, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:37:19.523 | INFO     | app.api:predict:48 - Prediction results: [92969.43900139036]
-2023-10-15 16:37:28.845 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=7, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:37:28.901 | INFO     | app.api:predict:48 - Prediction results: [127133.51767793071]
-2023-10-15 16:37:36.479 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=9, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:37:36.543 | INFO     | app.api:predict:48 - Prediction results: [141112.888436467]
-2023-10-15 16:37:59.187 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=7, OverallQual=9, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:37:59.244 | INFO     | app.api:predict:48 - Prediction results: [146276.1998004302]
-2023-10-15 16:38:16.347 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:38:16.418 | INFO     | app.api:predict:48 - Prediction results: [113422.55344864173]
-2023-10-15 16:38:46.704 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:38:46.770 | INFO     | app.api:predict:48 - Prediction results: [114539.01550914484]
-2023-10-15 16:39:14.705 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=9, OverallQual=7, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:39:14.769 | INFO     | app.api:predict:48 - Prediction results: [141605.7948841236]
-2023-10-15 16:39:38.039 | INFO     | app.api:predict:41 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=9, OverallQual=9, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1991, YearRemodAdd=1991, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
-2023-10-15 16:39:38.100 | INFO     | app.api:predict:48 - Prediction results: [157176.51096591481]
+2024-08-01 15:03:53.093 | INFO     | app.api:predict:38 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
+2024-08-01 15:03:53.144 | INFO     | app.api:predict:45 - Prediction results: [113422.55344864173]
+2024-08-01 15:28:07.940 | INFO     | app.api:predict:38 - Making prediction on inputs: [HouseDataInputSchema(Alley=None, BedroomAbvGr=2, BldgType='1Fam', BsmtCond='TA', BsmtExposure='No', BsmtFinSF1=468.0, BsmtFinSF2=144.0, BsmtFinType1='Rec', BsmtFinType2='LwQ', BsmtFullBath=0.0, BsmtHalfBath=0.0, BsmtQual='TA', BsmtUnfSF=270.0, CentralAir='Y', Condition1='Feedr', Condition2='Norm', Electrical='SBrkr', EnclosedPorch=0, ExterCond='TA', ExterQual='TA', Exterior1st='VinylSd', Exterior2nd='VinylSd', Fence='MnPrv', FireplaceQu=None, Fireplaces=0, Foundation='CBlock', FullBath=1, Functional='Typ', GarageArea=730.0, GarageCars=1.0, GarageCond='TA', GarageFinish='Unf', GarageQual='TA', GarageType='Attchd', GarageYrBlt=1961.0, GrLivArea=896, HalfBath=0, Heating='GasA', HeatingQC='TA', HouseStyle='1Story', Id=None, KitchenAbvGr=1, KitchenQual='TA', LandContour='Lvl', LandSlope='Gtl', LotArea=11622, LotConfig='Inside', LotFrontage=80.0, LotShape='Reg', LowQualFinSF=0, MSSubClass=20, MSZoning='RH', MasVnrArea=0.0, MasVnrType='None', MiscFeature=None, MiscVal=0, MoSold=6, Neighborhood='NAmes', OpenPorchSF=0, OverallCond=6, OverallQual=5, PavedDrive='Y', PoolArea=0, PoolQC=None, RoofMatl='CompShg', RoofStyle='Gable', SaleCondition='Normal', SaleType='WD', ScreenPorch=120, Street='Pave', TotRmsAbvGrd=5, TotalBsmtSF=882.0, Utilities='AllPub', WoodDeckSF=140, YearBuilt=1961, YearRemodAdd=1961, YrSold=2010, FirstFlrSF=896, SecondFlrSF=0, ThreeSsnPortch=0)]
+2024-08-01 15:28:07.986 | INFO     | app.api:predict:45 - Prediction results: [113422.55344864173]
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [2624]
+INFO:     Finished server process [24124]
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\app\main.py", line 60, in <module>
+    uvicorn.run(app, host="localhost", port=8001, log_level="debug")
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Lib\site-packages\uvicorn\main.py", line 575, in run
+    server.run()
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\houseprice_api\.tox\test_app\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

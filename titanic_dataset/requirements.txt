@@ -1,0 +1,9 @@
+pytest~=7.3.1
+scikit-learn~=1.2.2
+numpy~=1.24.3
+setuptools~=71.0.4
+pydantic~=1.10.8
+strictyaml~=1.7.3
+pandas~=2.0.2
+joblib~=1.2.0
+feature_engine~=1.6.0

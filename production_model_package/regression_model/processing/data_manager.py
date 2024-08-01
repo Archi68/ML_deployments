@@ -1,7 +1,7 @@
-import sys
+'''import sys
 
 sys.path.append('C:/Users/Irek9/OneDrive/Документы/KV_DW_JL_5/ML_deployments/production_model_package')
-
+'''
 import typing as t
 
 from pathlib import Path
@@ -22,7 +22,7 @@ def load_dataset(*, file_name: str) -> pd.DataFrame:
 
     return transformed
 
-def save_pipline(*, pipeline_to_persist: Pipeline) -> None:
+def save_pipeline(*, pipeline_to_persist: Pipeline) -> None:
     save_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
 
     save_path = TRAINED_MODEL_DIR / save_file_name

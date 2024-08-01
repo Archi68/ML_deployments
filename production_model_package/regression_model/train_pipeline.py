@@ -2,7 +2,7 @@ import numpy as np
 from config.core import config
 
 from pipeline import price_pipe
-from processing.data_manager import load_dataset, save_pipline
+from processing.data_manager import load_dataset, save_pipeline
 from sklearn.model_selection import train_test_split
 
 def run_training() -> None:
@@ -19,7 +19,7 @@ def run_training() -> None:
 
     price_pipe.fit(X_train, y_train)
 
-    save_pipline(pipeline_to_persist=price_pipe)
+    save_pipeline(pipeline_to_persist=price_pipe)
 
 
 if __name__ == '__main__':

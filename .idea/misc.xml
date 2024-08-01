@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="sdkName" value="C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="ml_deployment" project-jdk-type="Python SDK" />
   <component name="PythonCompatibilityInspectionAdvertiser">
     <option name="version" value="3" />
   </component>
