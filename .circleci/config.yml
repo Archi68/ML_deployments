@@ -24,7 +24,7 @@ prepare_tox: &prepare_tox
 jobs:
     test_app:
         <<: *defaults
-        working_directory: ~/project/ci_and_publishing/houseprice_api_old
+        working_directory: ~/project/ci_and_publishing/houseprice_api
         steps:
             - checkout:
                 path: ~/project
@@ -50,7 +50,7 @@ jobs:
 
     test_and_upload_regression_model:
         <<: *defaults
-        working_directory: ~/project/ci_and_publishing/model_package.old
+        working_directory: ~/project/ci_and_publishing/model_package
         steps:
             - checkout:
                 path: ~/project

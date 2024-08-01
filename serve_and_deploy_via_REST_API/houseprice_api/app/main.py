@@ -2,7 +2,7 @@ import sys
 
 sys.path.append(
     "C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\serve_and_deploy_via_REST_API"
-    "\\houseprice_api_old\\"
+    "\\houseprice_api\\"
 )
 
 from typing import Any

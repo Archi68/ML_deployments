@@ -1,9 +1,3 @@
-'''
-import sys
-
-sys.path.append('C:/Users/Irek9/OneDrive/Документы/KV_DW_JL_5/ML_deployments/production_model_package')
-'''
-
 import math
 import numpy as np
 from regression_model.predict import make_prediction

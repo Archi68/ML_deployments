@@ -12,7 +12,7 @@ class LoggingSettings(BaseSettings):
 
 
 class Settings(BaseSettings):
-    API_V1_STR: str = "/api/v1"
+    API_V1_STR: str = '/api/v1'
 
     logging: LoggingSettings = LoggingSettings()
 
@@ -30,7 +30,9 @@ class Settings(BaseSettings):
 
 
 class InterseptHandler(logging.Handler):
+
     def emit(self, record: logging.LogRecord) -> None:
+
         try:
             level = logger.level(record.levelname).name
 
@@ -42,9 +44,7 @@ class InterseptHandler(logging.Handler):
             frame = cast(FrameType, frame.f_back)
             depth += 1
 
-        logger.opt(depth=depth, exception=record.exc_info).log(
-            level, record.getMessage()
-        )
+        logger.opt(depth=depth, exception=record.exc_info).log(level, record.getMessage())
 
 
 def setup_app_logging(config: Settings) -> None:
@@ -58,7 +58,12 @@ def setup_app_logging(config: Settings) -> None:
         logging_logger.handlers = [InterseptHandler(level=config.logging.LOGGING_LEVEL)]
 
     logger.configure(
-        handlers=[{"sink": sys.stderr, "level": config.logging.LOGGING_LEVEL}]
+        handlers=[
+            {
+                "sink": sys.stderr,
+                "level": config.logging.LOGGING_LEVEL
+            }
+        ]
     )
 
 

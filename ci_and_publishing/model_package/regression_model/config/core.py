@@ -1,7 +1,3 @@
-'''import sys
-
-sys.path.append("C:\\Users\\Irek9\\OneDrive\\Документы\\KV_DW_JL_5\\ML_deployments\\production_model_package")
-'''
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence
 
@@ -19,6 +15,7 @@ DATASET_DIR = PACKAGE_ROOT / "datasets"
 
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 
+
 class AppConfig(BaseModel):
     package_name: str
     training_data_file: str
@@ -27,7 +24,6 @@ class AppConfig(BaseModel):
 
 
 class ModelConfig(BaseModel):
-
     target: str
     variables_to_rename: Dict
     features: List[str]
@@ -52,7 +48,7 @@ class ModelConfig(BaseModel):
     finish_mappings: Dict[str, int]
 
 
-class Config (BaseModel):
+class Config(BaseModel):
     """
     Master config object
     """
@@ -61,14 +57,14 @@ class Config (BaseModel):
 
     model_config: ModelConfig
 
-def find_config_file() -> Path:
 
+def find_config_file() -> Path:
     if CONFIG_FILE_PATH.is_file():
         return CONFIG_FILE_PATH
     raise Exception(f"Config not found at {CONFIG_FILE_PATH!r}")
 
-def fetch_config_from_yaml(cfg_path: Optional[Path] = None) -> YAML:
 
+def fetch_config_from_yaml(cfg_path: Optional[Path] = None) -> YAML:
     if not cfg_path:
         cfg_path = find_config_file()
     if cfg_path:
@@ -79,16 +75,16 @@ def fetch_config_from_yaml(cfg_path: Optional[Path] = None) -> YAML:
 
 
 def create_and_validate_config(parsed_config: YAML = None) -> Config:
-
     if parsed_config is None:
         parsed_config = fetch_config_from_yaml()
 
     # Переменные начинающиеся с _ это внутр переменные функции. Негласное соглашение питонистов
     _config = Config(
-        app_config = AppConfig(**parsed_config.data),
-        model_config = ModelConfig(**parsed_config.data)
+        app_config=AppConfig(**parsed_config.data),
+        model_config=ModelConfig(**parsed_config.data)
     )
 
     return _config
+
 
 config = create_and_validate_config()
