@@ -1,6 +1,6 @@
 FROM python:3.11
 
-RUN adduser --disables-password --gecos '' ml-api-adduser
+RUN adduser --disables-password --gecos '' ml-api-user
 
 WORKDIR /opt/houseprice_api
 
