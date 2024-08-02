@@ -6,11 +6,11 @@ WORKDIR /opt/houseprice_api
 
 ARG PIP_EXTRA_INDEX_URL
 
-ADD ./houseprice_api WORK_DIR # /opt/houseptrice_api
+ADD ./houseprice_api /opt/houseprice_api
 RUN pip install --upgrade pip
-RUN pip install -r WORKDIR/requirements.txt # /opt/houseprice_api/requirements.txt
+RUN pip install -r /opt/houseprice_api/requirements.txt
 
-RUN chmod +x WORK_DIR/run.sh # /opt/houseprice_api/run.sh
+RUN chmod +x /opt/houseprice_api/run.sh
 RUN shown -R ml-api-user:ml-api-user ./
 
 USER ml-api-user
