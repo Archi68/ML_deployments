@@ -35,6 +35,19 @@ jobs:
                 command: |
                     tox
 
+    test_app_container_via_railway:
+        executor:
+        <<: *defaults
+        working_directory: ~/project/deploying_with_containers/houseprice_api
+        steps:
+            - checkout:
+                path: ~/project
+            - *prepare_tox
+            - run:
+                name: Runnning app tests
+                command: |
+                    tox
+
     deploy_app_to_railway:
         executor:
         <<: *defaults
@@ -109,7 +122,7 @@ workflows:
             - test_app
             - deploy_app_to_railway:
                 requires:
-                    - test_app
+                    - test_app_container_via_railway
                 filters:
                     branches:
                         only:
