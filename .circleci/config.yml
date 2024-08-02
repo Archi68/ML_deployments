@@ -67,7 +67,31 @@ jobs:
                 name: Publish model to Gemfury
                 command: |
                     tox -e publish_model
+<<<<<<< Updated upstream
                     
+=======
+
+    deploy_app_container_via_railway:
+        <<: *defaults
+        steps:
+            - setup_remote_docker:
+                # Supported versions: https://circleci.com/docs/2.0/building-docker-images/#docker-version
+                version: 20.10.18
+
+            - checkout:
+                path: ~/project/
+
+            - node/install:
+                node-version: '16.13'
+
+            - run: node --version
+            - run: npm i -g @railway/cli
+
+            - run:
+                name: Build and Dockerfile
+                command: |
+                    cd deploying_with_containers && railway up --detach --service innovative-connection
+>>>>>>> Stashed changes
 
 tags_only: &tags_only
     filters:
