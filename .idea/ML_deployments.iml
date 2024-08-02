@@ -2,7 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="ml_deployment" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
