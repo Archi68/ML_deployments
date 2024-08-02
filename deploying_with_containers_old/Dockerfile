@@ -1,12 +1,12 @@
 FROM python:3.11
 
-RUN adduser --disabled-password --gecos '' ml-api-user
+RUN adduser --disables-password --gecos '' ml-api-user
 
 WORKDIR /opt/houseprice_api
 
 ARG PIP_EXTRA_INDEX_URL
 
-ADD ./houseprice_api /opt/houseprice_api
+ADD ./houseprice_api /opt/houseeprice_api
 RUN pip install --upgrade pip
 RUN pip install -r /opt/houseprice_api/requirements.txt
 

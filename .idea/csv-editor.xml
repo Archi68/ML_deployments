@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\ci_and_publishing\model_package\regression_model\datasets\test.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\production_model_package\regression_model\datasets\test.csv">
           <value>
             <Attribute>
