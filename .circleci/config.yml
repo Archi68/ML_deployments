@@ -23,6 +23,7 @@ prepare_tox: &prepare_tox
 
 jobs:
     test_app:
+        executor:
         <<: *defaults
         working_directory: ~/project/ci_and_publishing/houseprice_api
         steps:
@@ -35,6 +36,7 @@ jobs:
                     tox
 
     deploy_app_to_railway:
+        executor:
         <<: *defaults
         steps:
             - checkout:
@@ -49,6 +51,7 @@ jobs:
                     cd ci_and_publishing/houseprice_api && railway up --detach --service innovative-connection
 
     test_and_upload_regression_model:
+        executor:
         <<: *defaults
         working_directory: ~/project/ci_and_publishing/model_package
         steps:
@@ -70,6 +73,7 @@ jobs:
 
 
     deploy_app_container_via_railway:
+        executor:
         <<: *defaults
 
         steps:
