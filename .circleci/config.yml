@@ -71,7 +71,7 @@ jobs:
 
     deploy_app_container_via_railway:
         <<: *defaults
-        executor:
+
         steps:
             - setup_remote_docker:
                 # Supported versions: https://circleci.com/docs/2.0/building-docker-images/#docker-version
