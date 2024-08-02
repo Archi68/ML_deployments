@@ -90,7 +90,6 @@ jobs:
                 name: Build and Dockerfile
                 command: |
                     cd deploying_with_containers && railway up --detach --service innovative-connection
->>>>>>> Stashed changes
 
 tags_only: &tags_only
     filters:
