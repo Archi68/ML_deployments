@@ -7,5 +7,5 @@ flask==1.0.2
 marshmallow==3.19.0
 
 # Install from gemfury
-vve-regression-model==0.0.1
+vve-regression-model==0.0.4
 

@@ -79,7 +79,7 @@ jobs:
         steps:
             - setup_remote_docker:
                 # Supported versions: https://circleci.com/docs/2.0/building-docker-images/#docker-version
-                version: 20.10.18
+                version: 20.10.24 # 20.10.18
 
             - checkout:
                 path: ~/project/
@@ -89,7 +89,6 @@ jobs:
 
             - run: node --version
             - run: npm i -g @railway/cli
-
             - run:
                 name: Build and Dockerfile
                 command: |

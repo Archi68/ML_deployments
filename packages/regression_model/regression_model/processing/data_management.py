@@ -8,7 +8,7 @@ from regression_model import __version__ as _version
 import logging
 import typing as t
 
-logger = logging.getLogger(__name__)
+_logger = logging.getLogger(__name__)
 
 
 def load_dataset(*, file_name: str) -> pd.DataFrame:

@@ -2,7 +2,7 @@ from flask import Flask
 
 from api.config import get_logger
 
-logger = get_logger(logger_name=__name__)
+_logger = get_logger(logger_name=__name__)
 
 
 def create_app(*, config_object) -> Flask:
