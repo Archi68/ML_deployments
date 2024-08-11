@@ -1,0 +1,60 @@
+package_name: classification_model
+raw_data_file: DieCasting_Raw_Data.csv
+pipeline_name: DieCasting_classification_model
+pipeline_save_file: DieCasting_classification_model_output_v
+
+#app_config:
+#  package_name: classification_model
+#  raw_data_file: DieCasting_Raw_Data.csv
+#  pipeline_save_file: DieCasting_classification_model_output_v
+
+#model_config:
+target: Machine_Status
+
+features:
+  - Velocity_1
+  - Velocity_2
+  - Velocity_3
+  - High_Velocity
+  - Cylinder_Pressure
+  - Rapid_Rise_Time
+  - Biscuit_Thickness
+  - Cycle_Time
+  - Pressure_Rise_Time
+  - Casting_Pressure
+  - Spray_Time
+  - Spray_1_Time
+  - Spray_2_Time
+
+test_size: 0.3
+
+random_state: 42
+
+unused_fields:
+  - _id
+  - Shot
+  - Clamping_Force
+
+numerical_vars:
+  - Velocity_1
+  - Velocity_2
+  - Velocity_3
+  - High_Velocity
+  - Cylinder_Pressure
+  - Rapid_Rise_Time
+  - Biscuit_Thickness
+  - Cycle_Time
+  - Pressure_Rise_Time
+  - Casting_Pressure
+  - Spray_Time
+  - Spray_1_Time
+  - Spray_2_Time
+
+feature_importances:
+  - Velocity_1
+  - Velocity_2
+  - Cylinder_Pressure
+  - Rapid_Rise_Time
+  - Biscuit_Thickness
+  - Cycle_Time
+  - Pressure_Rise_Time

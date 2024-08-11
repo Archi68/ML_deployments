@@ -46,8 +46,24 @@ jobs:
             - run:
                 name: Deploy to Railway App (You must set RAILWAY_TOKEN env var)
                 command: |
-                    cd ci_and_publishing/houseprice_api && railway up --detach --service innovative-connection
+                    cd ci_and_publishing/die_casting_api && railway up --detach --service innovative-connection
 
+    test_and_upload_classification_model:
+        <<: *defaults
+        working_directory: ~/project/ci_and_publishing/diecasting_model_package
+        steps:
+            - checkout:
+                path: ~/project
+            - *prepare_tox
+            - run:
+                name: Test the model
+                command: |
+                    tox
+            - run:
+                name: Publish model to Gemfury
+                command: |
+                    tox -e publish_model
+                    
     test_and_upload_regression_model:
         <<: *defaults
         working_directory: ~/project/ci_and_publishing/model_package
@@ -67,7 +83,7 @@ jobs:
                 name: Publish model to Gemfury
                 command: |
                     tox -e publish_model
-                    
+
     deploy_app_container_via_railway:
         <<: *defaults
         steps:

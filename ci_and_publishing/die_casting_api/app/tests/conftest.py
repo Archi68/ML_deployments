@@ -1,10 +1,3 @@
-import sys
-
-sys.path.append(
-    "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/"
-    "serve_and_deploy_via_REST_API/die_casting_api/"
-)
-
 from typing import Generator
 
 import pandas as pd
