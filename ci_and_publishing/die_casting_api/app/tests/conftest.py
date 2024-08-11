@@ -11,7 +11,15 @@ from app.main import app
 
 @pytest.fixture(scope="module")
 def test_data() -> pd.DataFrame:
-    return load_dataset(file_name=config.app_config.test_data_file)
+    data = load_dataset(file_name=config.app_config.raw_data_file)
+    _, X_test, _, _ = train_test_split(
+        data,
+        data[config.model_config.target],
+        test_size=config.model_config.test_size,
+        random_state=config.model_config.random_state,
+    )
+
+    return X_test
 
 
 @pytest.fixture()
