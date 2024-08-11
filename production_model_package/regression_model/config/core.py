@@ -83,7 +83,7 @@ def create_and_validate_config(parsed_config: YAML = None) -> Config:
     if parsed_config is None:
         parsed_config = fetch_config_from_yaml()
 
-    # Переменные начинающиеся с _ это внутр переменные функции. Негласное соглашение питонистов
+    # Переменные начинающиеся с _ это временные переменные функции. Негласное соглашение питонистов
     _config = Config(
         app_config = AppConfig(**parsed_config.data),
         model_config = ModelConfig(**parsed_config.data)

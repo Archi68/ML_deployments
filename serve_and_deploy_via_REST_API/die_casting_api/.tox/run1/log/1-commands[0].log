@@ -1,0 +1,40 @@
+name: run1
+run_id: commands[0]
+env USERPROFILE: C:\Users\USER
+env PIP_EXTRA_INDEX_URL: https://fzmoh5Kz7hU12USMdh77:@pypi.fury.io/archi68/
+env SYSTEMROOT: C:\Windows
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env PROCESSOR_ARCHITECTURE: AMD64
+env NUMBER_OF_PROCESSORS: 12
+env COMSPEC: C:\Windows\system32\cmd.exe
+env PROGRAMFILES: C:\Program Files
+env TMP: C:\Users\USER\AppData\Local\Temp
+env TEMP: C:\Users\USER\AppData\Local\Temp
+env SYSTEMDRIVE: C:
+env PROGRAMDATA: C:\ProgramData
+env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;.;C:\Users\USER\AppData\Local\GitHubDesktop\bin
+env PYTHONHASHSEED: 1007
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env TOX_ENV_NAME: run1
+env TOX_WORK_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox
+env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app
+env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app
+env COLUMNS: 161
+env LINES: 9
+metadata pid: 31632
+cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api
+allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Scripts\*
+cmd: python app/main.py
+exit_code: 1
+
+standard error:
+Traceback (most recent call last):
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\app\main.py", line 15, in <module>
+    from app.api import api_router
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\app\api.py", line 37, in <module>
+    async def predict(input_data: schemas.MultipleDieCastingInputs) -> Any:
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'app.schemas' has no attribute 'MultipleDieCastingInputs'. Did you mean: 'MultipleDieCastingDataInputs'?

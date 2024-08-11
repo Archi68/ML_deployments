@@ -24,7 +24,7 @@ prepare_tox: &prepare_tox
 jobs:
     test_app:
         <<: *defaults
-        working_directory: ~/project/ci_and_publishing/houseprice_api
+        working_directory: ~/project/ci_and_publishing/die_casting_api
         steps:
             - checkout:
                 path: ~/project

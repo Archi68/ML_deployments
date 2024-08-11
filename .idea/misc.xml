@@ -4,6 +4,9 @@
     <option name="sdkName" value="C:\Users\Irek9\anaconda3\envs\KV-DW-JL-5\envs\ml_deployment" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="ml_deployment" project-jdk-type="Python SDK" />
+  <component name="PyCharmProfessionalAdvertiser">
+    <option name="shown" value="true" />
+  </component>
   <component name="PythonCompatibilityInspectionAdvertiser">
     <option name="version" value="3" />
   </component>

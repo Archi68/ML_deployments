@@ -1,0 +1,216 @@
+name: train
+run_id: commands[0]
+env USERPROFILE: C:\Users\USER
+env PIP_EXTRA_INDEX_URL: https://fzmoh5Kz7hU12USMdh77:@pypi.fury.io/archi68/
+env SYSTEMROOT: C:\Windows
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env PROCESSOR_ARCHITECTURE: AMD64
+env NUMBER_OF_PROCESSORS: 12
+env COMSPEC: C:\Windows\system32\cmd.exe
+env PROGRAMFILES: C:\Program Files
+env TMP: C:\Users\USER\AppData\Local\Temp
+env TEMP: C:\Users\USER\AppData\Local\Temp
+env SYSTEMDRIVE: C:
+env PROGRAMDATA: C:\ProgramData
+env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;.;C:\Users\USER\AppData\Local\GitHubDesktop\bin
+env PYTHONHASHSEED: 661
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox
+env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package
+env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package
+env COLUMNS: 161
+env LINES: 9
+metadata pid: 29156
+cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting
+allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package\Scripts\*:train
+cmd: python classification_model/train_pipeline.py
+exit_code: 0
+0:	learn: 0.5840460	total: 145ms	remaining: 26.7s
+1:	learn: 0.4956170	total: 146ms	remaining: 13.3s
+2:	learn: 0.4294380	total: 149ms	remaining: 9.02s
+3:	learn: 0.3733947	total: 152ms	remaining: 6.88s
+4:	learn: 0.3298292	total: 155ms	remaining: 5.59s
+5:	learn: 0.2918412	total: 158ms	remaining: 4.72s
+6:	learn: 0.2610202	total: 161ms	remaining: 4.1s
+7:	learn: 0.2338575	total: 164ms	remaining: 3.63s
+8:	learn: 0.2129802	total: 167ms	remaining: 3.27s
+9:	learn: 0.1935158	total: 170ms	remaining: 2.97s
+10:	learn: 0.1772319	total: 173ms	remaining: 2.74s
+11:	learn: 0.1639394	total: 176ms	remaining: 2.54s
+12:	learn: 0.1508337	total: 179ms	remaining: 2.37s
+13:	learn: 0.1388895	total: 182ms	remaining: 2.22s
+14:	learn: 0.1293103	total: 183ms	remaining: 2.08s
+15:	learn: 0.1199200	total: 185ms	remaining: 1.96s
+16:	learn: 0.1129802	total: 188ms	remaining: 1.86s
+17:	learn: 0.1070031	total: 191ms	remaining: 1.77s
+18:	learn: 0.1023448	total: 194ms	remaining: 1.7s
+19:	learn: 0.0976992	total: 197ms	remaining: 1.63s
+20:	learn: 0.0932936	total: 198ms	remaining: 1.54s
+21:	learn: 0.0890679	total: 201ms	remaining: 1.49s
+22:	learn: 0.0858604	total: 204ms	remaining: 1.44s
+23:	learn: 0.0823132	total: 207ms	remaining: 1.39s
+24:	learn: 0.0791488	total: 210ms	remaining: 1.34s
+25:	learn: 0.0769450	total: 213ms	remaining: 1.3s
+26:	learn: 0.0746549	total: 216ms	remaining: 1.27s
+27:	learn: 0.0724313	total: 220ms	remaining: 1.23s
+28:	learn: 0.0710808	total: 223ms	remaining: 1.2s
+29:	learn: 0.0698001	total: 226ms	remaining: 1.17s
+30:	learn: 0.0685664	total: 229ms	remaining: 1.14s
+31:	learn: 0.0673526	total: 232ms	remaining: 1.11s
+32:	learn: 0.0665265	total: 235ms	remaining: 1.08s
+33:	learn: 0.0656520	total: 239ms	remaining: 1.06s
+34:	learn: 0.0643877	total: 242ms	remaining: 1.03s
+35:	learn: 0.0629497	total: 245ms	remaining: 1.01s
+36:	learn: 0.0621435	total: 248ms	remaining: 991ms
+37:	learn: 0.0613956	total: 251ms	remaining: 971ms
+38:	learn: 0.0605479	total: 254ms	remaining: 952ms
+39:	learn: 0.0600275	total: 256ms	remaining: 927ms
+40:	learn: 0.0594942	total: 259ms	remaining: 909ms
+41:	learn: 0.0586894	total: 262ms	remaining: 893ms
+42:	learn: 0.0582524	total: 265ms	remaining: 876ms
+43:	learn: 0.0578424	total: 268ms	remaining: 860ms
+44:	learn: 0.0573036	total: 271ms	remaining: 843ms
+45:	learn: 0.0564522	total: 274ms	remaining: 829ms
+46:	learn: 0.0561003	total: 277ms	remaining: 814ms
+47:	learn: 0.0557711	total: 281ms	remaining: 801ms
+48:	learn: 0.0554559	total: 284ms	remaining: 788ms
+49:	learn: 0.0550032	total: 287ms	remaining: 775ms
+50:	learn: 0.0545492	total: 290ms	remaining: 763ms
+51:	learn: 0.0540310	total: 294ms	remaining: 751ms
+52:	learn: 0.0533805	total: 297ms	remaining: 740ms
+53:	learn: 0.0530907	total: 300ms	remaining: 728ms
+54:	learn: 0.0528817	total: 303ms	remaining: 717ms
+55:	learn: 0.0525094	total: 306ms	remaining: 706ms
+56:	learn: 0.0523422	total: 310ms	remaining: 695ms
+57:	learn: 0.0519355	total: 313ms	remaining: 685ms
+58:	learn: 0.0516776	total: 316ms	remaining: 675ms
+59:	learn: 0.0510278	total: 319ms	remaining: 665ms
+60:	learn: 0.0507816	total: 322ms	remaining: 655ms
+61:	learn: 0.0505951	total: 326ms	remaining: 646ms
+62:	learn: 0.0503191	total: 329ms	remaining: 638ms
+63:	learn: 0.0501532	total: 333ms	remaining: 629ms
+64:	learn: 0.0498885	total: 336ms	remaining: 621ms
+65:	learn: 0.0495362	total: 339ms	remaining: 612ms
+66:	learn: 0.0491259	total: 343ms	remaining: 603ms
+67:	learn: 0.0489648	total: 345ms	remaining: 594ms
+68:	learn: 0.0487896	total: 348ms	remaining: 586ms
+69:	learn: 0.0482187	total: 352ms	remaining: 578ms
+70:	learn: 0.0480450	total: 355ms	remaining: 570ms
+71:	learn: 0.0479113	total: 358ms	remaining: 561ms
+72:	learn: 0.0475240	total: 361ms	remaining: 554ms
+73:	learn: 0.0472795	total: 364ms	remaining: 547ms
+74:	learn: 0.0471497	total: 368ms	remaining: 539ms
+75:	learn: 0.0470204	total: 371ms	remaining: 532ms
+76:	learn: 0.0468991	total: 374ms	remaining: 525ms
+77:	learn: 0.0467759	total: 377ms	remaining: 518ms
+78:	learn: 0.0466605	total: 380ms	remaining: 510ms
+79:	learn: 0.0464508	total: 384ms	remaining: 503ms
+80:	learn: 0.0463718	total: 387ms	remaining: 496ms
+81:	learn: 0.0461519	total: 390ms	remaining: 490ms
+82:	learn: 0.0459558	total: 393ms	remaining: 483ms
+83:	learn: 0.0458304	total: 396ms	remaining: 476ms
+84:	learn: 0.0456455	total: 399ms	remaining: 469ms
+85:	learn: 0.0454625	total: 402ms	remaining: 463ms
+86:	learn: 0.0452753	total: 405ms	remaining: 456ms
+87:	learn: 0.0451075	total: 408ms	remaining: 450ms
+88:	learn: 0.0449432	total: 411ms	remaining: 444ms
+89:	learn: 0.0447724	total: 415ms	remaining: 438ms
+90:	learn: 0.0446120	total: 418ms	remaining: 432ms
+91:	learn: 0.0444544	total: 421ms	remaining: 426ms
+92:	learn: 0.0443209	total: 424ms	remaining: 420ms
+93:	learn: 0.0441622	total: 428ms	remaining: 414ms
+94:	learn: 0.0440098	total: 431ms	remaining: 408ms
+95:	learn: 0.0438603	total: 434ms	remaining: 403ms
+96:	learn: 0.0437137	total: 438ms	remaining: 397ms
+97:	learn: 0.0435704	total: 441ms	remaining: 391ms
+98:	learn: 0.0434917	total: 444ms	remaining: 386ms
+99:	learn: 0.0433517	total: 449ms	remaining: 381ms
+100:	learn: 0.0432153	total: 452ms	remaining: 376ms
+101:	learn: 0.0431381	total: 456ms	remaining: 371ms
+102:	learn: 0.0430640	total: 460ms	remaining: 366ms
+103:	learn: 0.0429928	total: 463ms	remaining: 361ms
+104:	learn: 0.0429095	total: 466ms	remaining: 355ms
+105:	learn: 0.0427633	total: 469ms	remaining: 350ms
+106:	learn: 0.0426207	total: 473ms	remaining: 345ms
+107:	learn: 0.0425412	total: 477ms	remaining: 340ms
+108:	learn: 0.0423996	total: 480ms	remaining: 335ms
+109:	learn: 0.0423267	total: 483ms	remaining: 330ms
+110:	learn: 0.0422518	total: 487ms	remaining: 324ms
+111:	learn: 0.0421794	total: 490ms	remaining: 319ms
+112:	learn: 0.0420480	total: 493ms	remaining: 314ms
+113:	learn: 0.0419813	total: 496ms	remaining: 309ms
+114:	learn: 0.0419120	total: 499ms	remaining: 304ms
+115:	learn: 0.0418457	total: 502ms	remaining: 299ms
+116:	learn: 0.0417224	total: 506ms	remaining: 294ms
+117:	learn: 0.0416585	total: 509ms	remaining: 289ms
+118:	learn: 0.0415792	total: 512ms	remaining: 284ms
+119:	learn: 0.0415035	total: 515ms	remaining: 279ms
+120:	learn: 0.0414431	total: 519ms	remaining: 274ms
+121:	learn: 0.0413845	total: 522ms	remaining: 270ms
+122:	learn: 0.0413134	total: 525ms	remaining: 265ms
+123:	learn: 0.0412455	total: 529ms	remaining: 260ms
+124:	learn: 0.0411900	total: 532ms	remaining: 255ms
+125:	learn: 0.0411254	total: 535ms	remaining: 250ms
+126:	learn: 0.0410726	total: 538ms	remaining: 246ms
+127:	learn: 0.0409650	total: 541ms	remaining: 241ms
+128:	learn: 0.0409145	total: 544ms	remaining: 236ms
+129:	learn: 0.0408107	total: 548ms	remaining: 232ms
+130:	learn: 0.0407111	total: 551ms	remaining: 227ms
+131:	learn: 0.0406568	total: 555ms	remaining: 223ms
+132:	learn: 0.0406060	total: 558ms	remaining: 218ms
+133:	learn: 0.0405574	total: 561ms	remaining: 214ms
+134:	learn: 0.0405108	total: 564ms	remaining: 209ms
+135:	learn: 0.0404632	total: 568ms	remaining: 204ms
+136:	learn: 0.0404195	total: 571ms	remaining: 200ms
+137:	learn: 0.0402940	total: 574ms	remaining: 195ms
+138:	learn: 0.0401843	total: 578ms	remaining: 191ms
+139:	learn: 0.0400658	total: 582ms	remaining: 187ms
+140:	learn: 0.0399782	total: 586ms	remaining: 183ms
+141:	learn: 0.0398666	total: 590ms	remaining: 179ms
+142:	learn: 0.0397603	total: 593ms	remaining: 174ms
+143:	learn: 0.0395849	total: 597ms	remaining: 170ms
+144:	learn: 0.0394201	total: 600ms	remaining: 166ms
+145:	learn: 0.0393823	total: 603ms	remaining: 161ms
+146:	learn: 0.0392434	total: 606ms	remaining: 157ms
+147:	learn: 0.0390885	total: 610ms	remaining: 152ms
+148:	learn: 0.0389963	total: 613ms	remaining: 148ms
+149:	learn: 0.0388954	total: 616ms	remaining: 144ms
+150:	learn: 0.0387498	total: 620ms	remaining: 140ms
+151:	learn: 0.0386955	total: 624ms	remaining: 135ms
+152:	learn: 0.0385668	total: 627ms	remaining: 131ms
+153:	learn: 0.0384293	total: 630ms	remaining: 127ms
+154:	learn: 0.0382990	total: 633ms	remaining: 123ms
+155:	learn: 0.0382479	total: 637ms	remaining: 118ms
+156:	learn: 0.0381979	total: 640ms	remaining: 114ms
+157:	learn: 0.0380746	total: 644ms	remaining: 110ms
+158:	learn: 0.0379522	total: 647ms	remaining: 106ms
+159:	learn: 0.0378726	total: 650ms	remaining: 102ms
+160:	learn: 0.0377553	total: 654ms	remaining: 97.4ms
+161:	learn: 0.0376697	total: 657ms	remaining: 93.3ms
+162:	learn: 0.0375593	total: 661ms	remaining: 89.2ms
+163:	learn: 0.0374775	total: 664ms	remaining: 85ms
+164:	learn: 0.0373947	total: 667ms	remaining: 80.9ms
+165:	learn: 0.0373138	total: 671ms	remaining: 76.8ms
+166:	learn: 0.0372344	total: 674ms	remaining: 72.6ms
+167:	learn: 0.0371495	total: 677ms	remaining: 68.5ms
+168:	learn: 0.0370362	total: 680ms	remaining: 64.4ms
+169:	learn: 0.0369303	total: 683ms	remaining: 60.3ms
+170:	learn: 0.0368425	total: 687ms	remaining: 56.2ms
+171:	learn: 0.0367599	total: 690ms	remaining: 52.1ms
+172:	learn: 0.0366532	total: 693ms	remaining: 48.1ms
+173:	learn: 0.0365582	total: 696ms	remaining: 44ms
+174:	learn: 0.0364677	total: 700ms	remaining: 40ms
+175:	learn: 0.0363814	total: 703ms	remaining: 35.9ms
+176:	learn: 0.0362827	total: 706ms	remaining: 31.9ms
+177:	learn: 0.0362044	total: 709ms	remaining: 27.9ms
+178:	learn: 0.0361152	total: 713ms	remaining: 23.9ms
+179:	learn: 0.0360195	total: 716ms	remaining: 19.9ms
+180:	learn: 0.0359475	total: 719ms	remaining: 15.9ms
+181:	learn: 0.0358702	total: 722ms	remaining: 11.9ms
+182:	learn: 0.0357961	total: 726ms	remaining: 7.93ms
+183:	learn: 0.0357221	total: 729ms	remaining: 3.96ms
+184:	learn: 0.0356510	total: 733ms	remaining: 0us
