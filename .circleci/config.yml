@@ -46,7 +46,7 @@ jobs:
             - run:
                 name: Deploy to Railway App (You must set RAILWAY_TOKEN env var)
                 command: |
-                    cd ci_and_publishing/die_casting_api && railway up --detach --service innovative-connection
+                    cd ci_and_publishing/die_casting_api && railway up --detach --service serene-reflection
 
     test_and_upload_classification_model:
         <<: *defaults
