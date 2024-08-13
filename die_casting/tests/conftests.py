@@ -1,13 +1,16 @@
-import logging
 import sys
+sys.path.append(
+    "//Users//irinakim//Documents//ML_Deployment//die_casting//"
+    'C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/'
+)
 
+import logging
 import pytest
 from sklearn.model_selection import train_test_split
 
 from classification_model.config.core import config
 from classification_model.processing.data_manager import _load_raw_dataset
 
-sys.path.append("//Users//irinakim//Documents//ML_Deployment//die_casting//")
 
 logger = logging.getLogger(__name__)
 
