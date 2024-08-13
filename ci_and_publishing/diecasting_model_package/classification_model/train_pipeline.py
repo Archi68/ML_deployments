@@ -1,7 +1,3 @@
-import sys
-
-sys.path.append("C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting")
-
 from sklearn.model_selection import train_test_split
 
 from classification_model.config.core import config

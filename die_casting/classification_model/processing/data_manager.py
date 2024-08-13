@@ -24,6 +24,10 @@ def check_columns(data: pd.DataFrame, expected_columns: List[str]) -> None:
 def pre_pipeline_preparation(*, dataframe: pd.DataFrame) -> pd.DataFrame:
     data = dataframe.replace("?", np.nan)
 
+    # Проверка наличия дублирующихся строк и удаление при наличии
+    if data.duplicated().sum() > 0:
+        data.drop_duplicates(keep="last", inplace=True)
+
     # Обработка отсутствующих значений в целевой переменной
     if data[config.model_config.target].isnull().any():
         imputer = MeanMedianImputer(
@@ -31,12 +35,8 @@ def pre_pipeline_preparation(*, dataframe: pd.DataFrame) -> pd.DataFrame:
         )
         data = imputer.fit_transform(data)
 
-    # Проверка наличия дублирующихся строк и удаление при наличии
-    if data.duplicated().sum() > 0:
-        data.drop_duplicates(keep='last', inplace=True)
-
     check_columns(data, list(config.model_config.features))
-    print(data.shape)
+    # print(data.shape)
 
     return data
 

@@ -12,7 +12,8 @@ from classification_model.processing.data_manager import load_dataset, save_pipe
 def run_training() -> None:
     """Загрузка данных, обучение модели и сохранение пайплайна"""
     data = load_dataset(file_name=config.app_config.raw_data_file)
-
+    _target = data[config.model_config.target]
+    _predictors = data[config.model_config.features]
     X_train, X_test, y_train, y_test = train_test_split(
         data[config.model_config.features],
         data[config.model_config.target],

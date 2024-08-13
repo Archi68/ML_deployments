@@ -9,16 +9,24 @@ from typing import Generator
 
 import pandas as pd
 import pytest
-from classification_model.config.core import config
-from classification_model.processing.data_manager import load_dataset
 from fastapi.testclient import TestClient
+from sklearn.model_selection import train_test_split
 
 from app.main import app
-
+from classification_model.config.core import config
+from classification_model.processing.data_manager import load_dataset
 
 @pytest.fixture(scope="module")
 def test_data() -> pd.DataFrame:
-    return load_dataset(file_name=config.app_config.test_data_file)
+    data = load_dataset(file_name=config.app_config.raw_data_file)
+    _, X_test, _, _ = train_test_split(
+        data,
+        data[config.model_config.target],
+        test_size=config.model_config.test_size,
+        random_state=config.model_config.random_state,
+    )
+
+    return X_test
 
 
 @pytest.fixture()

@@ -3,8 +3,6 @@ import sys
 import pandas as pd
 import pytest
 
-sys.path.append("//Users//irinakim//Documents//ML_Deployment//die_casting//")
-
 from sklearn.model_selection import train_test_split
 
 from classification_model.config.core import config

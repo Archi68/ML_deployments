@@ -1,6 +1,7 @@
 import sys
 
 sys.path.append("C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/")
+
 from pathlib import Path
 from typing import Any, Dict, Optional, Sequence, Union
 
@@ -12,7 +13,7 @@ import classification_model
 PACKAGE_ROOT = Path(classification_model.__file__).parent.resolve()
 ROOT = PACKAGE_ROOT.parent
 
-CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yaml"
+CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 DATASET_DIR = PACKAGE_ROOT / "datasets"
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 

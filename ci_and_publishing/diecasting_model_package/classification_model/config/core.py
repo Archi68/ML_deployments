@@ -1,6 +1,3 @@
-import sys
-
-sys.path.append("C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/")
 from pathlib import Path
 from typing import Any, Dict, Optional, Sequence, Union
 
@@ -60,9 +57,7 @@ def fetch_config_from_yaml(cfg_path: Optional[Path] = None) -> YAML:
     raise OSError(f"Did not find config file at path {cfg_path}")
 
 
-def create_and_validate_config(
-    parsed_config: Optional[Union[Dict[Any, Any], YAML]] = None
-) -> Config:
+def create_and_validate_config(parsed_config: Optional[Union[Dict[Any, Any], YAML]] = None) -> Config:
     if parsed_config is None:
         parsed_config = fetch_config_from_yaml()
     if not isinstance(parsed_config, YAML):

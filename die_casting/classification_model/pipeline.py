@@ -13,26 +13,21 @@ sys.path.append(
     "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/"
 )
 
-die_casting_pipeline = Pipeline(steps=[
-    (
-        "median_imputation",
-        MeanMedianImputer(
-            imputation_method="median",
-            variables=config.model_config.numerical_vars
+die_casting_pipeline = Pipeline(
+    steps=[
+        (
+            "median_imputation",
+            MeanMedianImputer(
+                imputation_method="median", variables=config.model_config.numerical_vars
+            ),
         ),
-    ),
-    (
-        "winsorizer",
-        Winsorizer(variables=config.model_config.numerical_vars)
-    ),
-    (
-        "scaler",
-        MinMaxScaler()
-    ),
-    (
-        "classifier",
-        CatBoostClassifier(
-            depth=9, iterations=185, learning_rate=0.13368726656560678
+        ("winsorizer", Winsorizer(variables=config.model_config.numerical_vars)),
+        ("scaler", MinMaxScaler()),
+        (
+            "classifier",
+            CatBoostClassifier(
+                depth=9, iterations=185, learning_rate=0.13368726656560678
+            ),
         ),
-    ),
-])
+    ]
+)
