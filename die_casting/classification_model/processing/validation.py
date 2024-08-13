@@ -50,8 +50,8 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
     pre_processed = pre_pipeline_preparation(dataframe=input_data)
     validated_data = pre_processed[config.model_config.features].copy()
 
-    #pre_processed = pre_pipeline_preparation(dataframe=input_data)
-    #validated_data = drop_na_inputs(input_data=pre_processed)
+    # pre_processed = pre_pipeline_preparation(dataframe=input_data)
+    # validated_data = drop_na_inputs(input_data=pre_processed)
 
     errors = None
 
