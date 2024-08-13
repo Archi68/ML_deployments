@@ -2,10 +2,11 @@ from typing import Generator
 
 import pandas as pd
 import pytest
+from fastapi.testclient import TestClient
+from sklearn.model_selection import train_test_split
+
 from classification_model.config.core import config
 from classification_model.processing.data_manager import load_dataset
-from fastapi.testclient import TestClient
-
 from app.main import app
 
 
