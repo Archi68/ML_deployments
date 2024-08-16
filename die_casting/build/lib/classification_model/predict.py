@@ -18,7 +18,10 @@ _die_casting_pipe = load_pipeline(file_name=pipeline_file_name)
 
 def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
     data = pd.DataFrame(input_data)
+
     validated_data, errors = validate_inputs(input_data=data)
+    # print(f'In make_prediction(): \n{validated_data} \nОшибки: {errors}')
+
     results = {"predictions": None, "version": _version, "errors": errors}
 
     if not errors:

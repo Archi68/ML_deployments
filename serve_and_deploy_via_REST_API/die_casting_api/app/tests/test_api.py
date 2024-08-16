@@ -3,10 +3,12 @@ import math
 import numpy as np
 import pandas as pd
 from fastapi.testclient import TestClient
+from classification_model.config.core import config
 
 
 def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     # Given
+    test_data = test_data[config.model_config.features]
     payload = {"inputs": test_data.replace({np.nan: None}).to_dict(orient="records")}
 
     # Wnen

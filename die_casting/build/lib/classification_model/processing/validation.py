@@ -12,6 +12,25 @@ from classification_model.config.core import config
 from classification_model.processing.data_manager import pre_pipeline_preparation
 
 
+def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[str]]:
+    # pre_processed = pre_pipeline_preparation(dataframe=input_data)
+    # validated_data = pre_processed[config.model_config.features].copy()
+
+    # relevant_data = pre_processed[config.model_config.features].copy()
+    validated_data = input_data[config.model_config.features].copy()
+
+    errors = None
+
+    try:
+        MultipleDieCastingInputs(
+            inputs=validated_data.replace({np.nan: None}).to_dict(orient="records")
+        )
+    except ValidationError as error:
+        errors = error.json()
+
+    return validated_data, errors
+
+
 class DieCastingDataInputSchema(BaseModel):
     Velocity_1: Optional[float]
     Velocity_2: Optional[float]
@@ -30,17 +49,3 @@ class DieCastingDataInputSchema(BaseModel):
 
 class MultipleDieCastingInputs(BaseModel):
     inputs: List[DieCastingDataInputSchema]
-
-
-def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[str]]:
-    pre_processed = pre_pipeline_preparation(dataframe=input_data)
-    validated_data = pre_processed[config.model_config.features].copy()
-    errors = None
-
-    try:
-        MultipleDieCastingInputs(
-            inputs=validated_data.replace({np.nan: None}).to_dict(orient="records")
-        )
-    except ValidationError as error:
-        errors = error.json()
-    return validated_data, errors

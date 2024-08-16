@@ -1,0 +1,174 @@
+name: run1
+run_id: commands[0]
+env USERPROFILE: C:\Users\USER
+env PIP_EXTRA_INDEX_URL: https://fzmoh5Kz7hU12USMdh77:@pypi.fury.io/archi68/
+env SYSTEMROOT: C:\Windows
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env PROCESSOR_ARCHITECTURE: AMD64
+env NUMBER_OF_PROCESSORS: 12
+env COMSPEC: C:\Windows\system32\cmd.exe
+env PROGRAMFILES: C:\Program Files
+env TMP: C:\Users\USER\AppData\Local\Temp
+env TEMP: C:\Users\USER\AppData\Local\Temp
+env SYSTEMDRIVE: C:
+env PROGRAMDATA: C:\ProgramData
+env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;.;C:\Users\USER\AppData\Local\GitHubDesktop\bin
+env PYTHONHASHSEED: 851
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env TOX_ENV_NAME: run1
+env TOX_WORK_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox
+env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app
+env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app
+env COLUMNS: 228
+env LINES: 13
+metadata pid: 31612
+cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api
+allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Scripts\*
+cmd: python app/main.py
+exit_code: 3221225786
+INFO:     ::1:64160 - "GET / HTTP/1.1" 200 OK
+INFO:     ::1:64161 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:64161 - "GET /api/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     ::1:64173 - "POST /api/v1/predict HTTP/1.1" 500 Internal Server Error
+INFO:     ::1:53561 - "POST /api/v1/predict HTTP/1.1" 500 Internal Server Error
+
+standard error:
+2024-08-16 05:29:54.440 | WARNING  | __main__:<module>:56 - Running in development mode. Do not run like this in production
+INFO:     Started server process [25304]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
+2024-08-16 05:30:16.373 | INFO     | app.api:predict:38 - Making prediction on inputs: [DieCastingDataInputSchema(Velocity_1=0.164, Velocity_2=0.192, Velocity_3=0.21, High_Velocity=2.247, Cylinder_Pressure=239.0, Rapid_Rise_Time=0.009, Biscuit_Thickness=13.0, Cycle_Time=22.5, Pressure_Rise_Time=0.039, Casting_Pressure=1158.0, Spray_Time=9.8, Spray_1_Time=1.2, Spray_2_Time=0.7)]
+2024-08-16 05:30:16.392 | INFO     | app.api:predict:45 - Prediction results: [0.]
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'loc': ('response', 'predictions'), 'msg': 'value is not a valid list', 'type': 'type_error.list'}
+
+2024-08-16 16:42:01.411 | INFO     | app.api:predict:38 - Making prediction on inputs: [DieCastingDataInputSchema(Velocity_1=0.164, Velocity_2=0.192, Velocity_3=0.21, High_Velocity=247.0, Cylinder_Pressure=239.0, Rapid_Rise_Time=0.009, Biscuit_Thickness=13.0, Cycle_Time=22.5, Pressure_Rise_Time=0.039, Casting_Pressure=1158.0, Spray_Time=9.8, Spray_1_Time=1.2, Spray_2_Time=0.7)]
+2024-08-16 16:42:01.423 | INFO     | app.api:predict:45 - Prediction results: [0.]
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\routing.py", line 296, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\fastapi\routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'loc': ('response', 'predictions'), 'msg': 'value is not a valid list', 'type': 'type_error.list'}
+
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25304]
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\app\main.py", line 59, in <module>
+    uvicorn.run(app, host="localhost", port=8001, log_level="debug")
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\main.py", line 575, in run
+    server.run()
+  File "C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\serve_and_deploy_via_REST_API\die_casting_api\.tox\test_app\Lib\site-packages\uvicorn\server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\envs\ml_deployment\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

@@ -14,7 +14,7 @@ env TEMP: C:\Users\USER\AppData\Local\Temp
 env SYSTEMDRIVE: C:
 env PROGRAMDATA: C:\ProgramData
 env PATH: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment;C:\ProgramData\anaconda3\envs\ml_deployment\Library\mingw-w64\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\usr\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Library\bin;C:\ProgramData\anaconda3\envs\ml_deployment\Scripts;C:\ProgramData\anaconda3\envs\ml_deployment\bin;C:\ProgramData\anaconda3\condabin;C:\Program Files\NVIDIA\CUDNN\v9.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.1;C:\Program Files (x86)\Common Files\Acronis\SnapAPI;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLI\bin;C:\Users\USER\scoop\shims;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\.dotnet\tools;C:\Program Files\JetBrains\PyCharm Community Edition 2024.1.4\bin;.;C:\Users\USER\AppData\Local\GitHubDesktop\bin
-env PYTHONHASHSEED: 863
+env PYTHONHASHSEED: 241
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
@@ -24,7 +24,7 @@ env TOX_ENV_DIR: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casti
 env VIRTUAL_ENV: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package
 env COLUMNS: 228
 env LINES: 13
-metadata pid: 31392
+metadata pid: 15588
 cwd: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting
 allow: C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting\.tox\test_package\Scripts\*:train
 cmd: pip install -r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements/test_requirements.txt
@@ -61,7 +61,7 @@ Collecting typing-extensions>=4.2.0 (from pydantic==1.10.8->-r C:\Users\USER\One
   Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
 Collecting scipy>=1.3.2 (from scikit-learn==1.2.2->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 6))
   Downloading scipy-1.14.0-cp311-cp311-win_amd64.whl.metadata (60 kB)
-     ---------------------------------------- 60.8/60.8 kB 3.2 MB/s eta 0:00:00
+     ---------------------------------------- 60.8/60.8 kB ? eta 0:00:00
 Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 6))
   Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
 Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml==0.17.28->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 8))
@@ -92,7 +92,7 @@ Collecting cycler>=0.10 (from matplotlib->catboost->-r C:\Users\USER\OneDrive\Do
   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
 Collecting fonttools>=4.22.0 (from matplotlib->catboost->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 11))
   Downloading fonttools-4.53.1-cp311-cp311-win_amd64.whl.metadata (165 kB)
-     ---------------------------------------- 165.9/165.9 kB 10.4 MB/s eta 0:00:00
+     ---------------------------------------- 165.9/165.9 kB 9.7 MB/s eta 0:00:00
 Collecting kiwisolver>=1.3.1 (from matplotlib->catboost->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 11))
   Downloading kiwisolver-1.4.5-cp311-cp311-win_amd64.whl.metadata (6.5 kB)
 Collecting pillow>=8 (from matplotlib->catboost->-r C:\Users\USER\OneDrive\Docs\KV_DW_JL_5\ML_deployments\die_casting/requirements\requirements.txt (line 11))
@@ -104,21 +104,21 @@ Collecting tenacity>=6.2.0 (from plotly->catboost->-r C:\Users\USER\OneDrive\Doc
 Downloading numpy-1.24.3-cp311-cp311-win_amd64.whl (14.8 MB)
    ---------------------------------------- 14.8/14.8 MB 10.1 MB/s eta 0:00:00
 Downloading pandas-2.0.2-cp311-cp311-win_amd64.whl (10.6 MB)
-   ---------------------------------------- 10.6/10.6 MB 9.4 MB/s eta 0:00:00
+   ---------------------------------------- 10.6/10.6 MB 9.9 MB/s eta 0:00:00
 Downloading pydantic-1.10.8-cp311-cp311-win_amd64.whl (2.1 MB)
-   ---------------------------------------- 2.1/2.1 MB 9.5 MB/s eta 0:00:00
+   ---------------------------------------- 2.1/2.1 MB 10.3 MB/s eta 0:00:00
 Downloading scikit_learn-1.2.2-cp311-cp311-win_amd64.whl (8.3 MB)
-   ---------------------------------------- 8.3/8.3 MB 9.3 MB/s eta 0:00:00
+   ---------------------------------------- 8.3/8.3 MB 10.1 MB/s eta 0:00:00
 Downloading strictyaml-1.7.3-py3-none-any.whl (123 kB)
    ---------------------------------------- 123.9/123.9 kB 7.1 MB/s eta 0:00:00
 Downloading ruamel.yaml-0.17.28-py3-none-any.whl (109 kB)
    ---------------------------------------- 109.6/109.6 kB 6.2 MB/s eta 0:00:00
 Downloading feature_engine-1.6.0-py2.py3-none-any.whl (319 kB)
-   ---------------------------------------- 319.4/319.4 kB 10.0 MB/s eta 0:00:00
+   ---------------------------------------- 319.4/319.4 kB 9.7 MB/s eta 0:00:00
 Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
-   ---------------------------------------- 298.0/298.0 kB 9.3 MB/s eta 0:00:00
+   ---------------------------------------- 298.0/298.0 kB 18.0 MB/s eta 0:00:00
 Downloading catboost-1.2.5-cp311-cp311-win_amd64.whl (101.1 MB)
-   ---------------------------------------- 101.1/101.1 MB 9.1 MB/s eta 0:00:00
+   ---------------------------------------- 101.1/101.1 MB 10.2 MB/s eta 0:00:00
 Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
    ---------------------------------------- 325.3/325.3 kB 10.2 MB/s eta 0:00:00
 Downloading pluggy-1.5.0-py3-none-any.whl (20 kB)
@@ -127,9 +127,9 @@ Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
 Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
    ---------------------------------------- 505.5/505.5 kB 10.5 MB/s eta 0:00:00
 Downloading ruamel.yaml.clib-0.2.8-cp311-cp311-win_amd64.whl (118 kB)
-   ---------------------------------------- 118.0/118.0 kB 7.2 MB/s eta 0:00:00
+   ---------------------------------------- 118.0/118.0 kB 6.7 MB/s eta 0:00:00
 Downloading scipy-1.14.0-cp311-cp311-win_amd64.whl (44.7 MB)
-   ---------------------------------------- 44.7/44.7 MB 9.8 MB/s eta 0:00:00
+   ---------------------------------------- 44.7/44.7 MB 10.1 MB/s eta 0:00:00
 Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
 Downloading statsmodels-0.14.2-cp311-cp311-win_amd64.whl (9.9 MB)
    ---------------------------------------- 9.9/9.9 MB 10.2 MB/s eta 0:00:00
@@ -141,25 +141,25 @@ Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
    ---------------------------------------- 345.4/345.4 kB 10.8 MB/s eta 0:00:00
 Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
 Downloading graphviz-0.20.3-py3-none-any.whl (47 kB)
-   ---------------------------------------- 47.1/47.1 kB 2.5 MB/s eta 0:00:00
+   ---------------------------------------- 47.1/47.1 kB ? eta 0:00:00
 Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
 Downloading matplotlib-3.9.2-cp311-cp311-win_amd64.whl (7.8 MB)
-   ---------------------------------------- 7.8/7.8 MB 10.0 MB/s eta 0:00:00
+   ---------------------------------------- 7.8/7.8 MB 10.2 MB/s eta 0:00:00
 Downloading plotly-5.23.0-py3-none-any.whl (17.3 MB)
-   ---------------------------------------- 17.3/17.3 MB 10.1 MB/s eta 0:00:00
+   ---------------------------------------- 17.3/17.3 MB 9.2 MB/s eta 0:00:00
 Downloading contourpy-1.2.1-cp311-cp311-win_amd64.whl (188 kB)
-   ---------------------------------------- 188.2/188.2 kB 11.9 MB/s eta 0:00:00
+   ---------------------------------------- 188.2/188.2 kB 11.1 MB/s eta 0:00:00
 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
 Downloading fonttools-4.53.1-cp311-cp311-win_amd64.whl (2.2 MB)
-   ---------------------------------------- 2.2/2.2 MB 10.8 MB/s eta 0:00:00
+   ---------------------------------------- 2.2/2.2 MB 10.0 MB/s eta 0:00:00
 Downloading kiwisolver-1.4.5-cp311-cp311-win_amd64.whl (56 kB)
-   ---------------------------------------- 56.1/56.1 kB 2.9 MB/s eta 0:00:00
+   ---------------------------------------- 56.1/56.1 kB ? eta 0:00:00
 Downloading patsy-0.5.6-py2.py3-none-any.whl (233 kB)
-   ---------------------------------------- 233.9/233.9 kB 7.2 MB/s eta 0:00:00
+   ---------------------------------------- 233.9/233.9 kB 14.0 MB/s eta 0:00:00
 Downloading pillow-10.4.0-cp311-cp311-win_amd64.whl (2.6 MB)
    ---------------------------------------- 2.6/2.6 MB 10.2 MB/s eta 0:00:00
 Downloading pyparsing-3.1.2-py3-none-any.whl (103 kB)
-   ---------------------------------------- 103.2/103.2 kB ? eta 0:00:00
+   ---------------------------------------- 103.2/103.2 kB 5.8 MB/s eta 0:00:00
 Downloading tenacity-9.0.0-py3-none-any.whl (28 kB)
 Installing collected packages: pytz, tzdata, typing-extensions, threadpoolctl, tenacity, six, ruamel.yaml.clib, pyparsing, pluggy, pillow, packaging, numpy, kiwisolver, joblib, iniconfig, graphviz, fonttools, cycler, colorama, scipy, ruamel.yaml, python-dateutil, pytest, pydantic, plotly, patsy, contourpy, strictyaml, scikit-learn, pandas, matplotlib, statsmodels, catboost, feature_engine
 Successfully installed catboost-1.2.5 colorama-0.4.6 contourpy-1.2.1 cycler-0.12.1 feature_engine-1.6.0 fonttools-4.53.1 graphviz-0.20.3 iniconfig-2.0.0 joblib-1.2.0 kiwisolver-1.4.5 matplotlib-3.9.2 numpy-1.24.3 packaging-24.1 pandas-2.0.2 patsy-0.5.6 pillow-10.4.0 plotly-5.23.0 pluggy-1.5.0 pydantic-1.10.8 pyparsing-3.1.2 pytest-7.4.4 python-dateutil-2.9.0.post0 pytz-2024.1 ruamel.yaml-0.17.28 ruamel.yaml.clib-0.2.8 scikit-learn-1.2.2 scipy-1.14.0 six-1.16.0 statsmodels-0.14.2 strictyaml-1.7.3 tenacity-9.0.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1

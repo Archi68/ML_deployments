@@ -10,12 +10,12 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-from classification_model import __version__ as model_version
-from classification_model.predict import make_prediction
 from fastapi import APIRouter, HTTPException
 from fastapi.encoders import jsonable_encoder
 from loguru import logger
 
+from classification_model import __version__ as model_version
+from classification_model.predict import make_prediction
 from app import __version__, schemas
 from app.config import settings
 
@@ -35,7 +35,7 @@ def health() -> dict:
 async def predict(input_data: schemas.MultipleDieCastingDataInputs) -> Any:
     input_df = pd.DataFrame(jsonable_encoder(input_data.inputs))
 
-    logger.info(f"Making prediction on inputs: input_data.inputs")
+    logger.info(f"Making prediction on inputs: {input_data.inputs[:10]}")
     results = make_prediction(input_data=input_df.replace({np.nan: None}))
     if results["errors"] is not None:
         logger.warning(f"Prediction validation error: {results.get('errors')}")
