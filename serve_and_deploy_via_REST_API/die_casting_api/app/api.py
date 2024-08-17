@@ -37,7 +37,7 @@ async def predict(input_data: schemas.MultipleDieCastingDataInputs) -> Any:
 
     logger.info(f"Making prediction on inputs: {input_data.inputs[:2]}")
     results = make_prediction(input_data=input_df.replace({np.nan: None}))
-
+    print(f"isinstance(results.get('predictions'), list) => {isinstance(results.get('predictions'), list)}")
     if not isinstance(results.get('predictions'), list):
         results['predictions'] = list(results.get('predictions'))
         #raise ValueError("Predictions must be a list")
