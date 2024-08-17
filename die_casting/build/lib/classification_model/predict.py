@@ -22,12 +22,12 @@ def make_prediction(*, input_data: t.Union[pd.DataFrame, dict]) -> dict:
     validated_data, errors = validate_inputs(input_data=data)
     # print(f'In make_prediction(): \n{validated_data} \nОшибки: {errors}')
 
-    results = {"predictions": None, "version": _version, "errors": errors}
+    results = {"errors": errors, "version": _version, "predictions": None}
 
     if not errors:
         predictions = _die_casting_pipe.predict(
             X=validated_data[config.model_config.features]
         )
-        results = {"predictions": predictions, "version": _version, "errors": errors}
+        results = {"errors": errors, "version": _version, "predictions": predictions}
 
     return results

@@ -35,8 +35,13 @@ def health() -> dict:
 async def predict(input_data: schemas.MultipleDieCastingDataInputs) -> Any:
     input_df = pd.DataFrame(jsonable_encoder(input_data.inputs))
 
-    logger.info(f"Making prediction on inputs: {input_data.inputs[:10]}")
+    logger.info(f"Making prediction on inputs: {input_data.inputs[:2]}")
     results = make_prediction(input_data=input_df.replace({np.nan: None}))
+
+    if not isinstance(results.get('predictions'), list):
+        results['predictions'] = list(results.get('predictions'))
+        #raise ValueError("Predictions must be a list")
+
     if results["errors"] is not None:
         logger.warning(f"Prediction validation error: {results.get('errors')}")
 
