@@ -125,7 +125,7 @@ workflows:
                             - main
                             - demo
             - test_and_upload_classification_model:
-            <<: *tags_only
+                <<: *tags_only
 
             # upload after git tags are created
             #- test_and_upload_regression_model:
