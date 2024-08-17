@@ -128,8 +128,8 @@ workflows:
             <<: *tags_only
 
             # upload after git tags are created
-            - test_and_upload_regression_model:
-                <<: *tags_only
+            #- test_and_upload_regression_model:
+            #    <<: *tags_only
 
             - deploy_app_container_via_railway:
                 filters:
