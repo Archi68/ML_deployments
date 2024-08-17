@@ -44,7 +44,8 @@ class InterseptHandler(logging.Handler):
 
         logging.opt(
             depth=depth,
-            exception=record.exc_info).log(level, record.getMessage())
+            exception=record.exc_info).log(level, record.getMessage()
+        )
 
 
 def setup_app_logging(config: Settings) -> None:
