@@ -1,5 +1,11 @@
 import sys
 
+sys.path.append(
+    # "//Users//irinakim//Documents//ML_Deployment//die_casting//"
+    "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/"
+)
+
+
 from catboost import CatBoostClassifier
 from feature_engine.imputation import MeanMedianImputer
 from sklearn.pipeline import Pipeline
@@ -7,11 +13,6 @@ from sklearn.preprocessing import MinMaxScaler
 
 from classification_model.config.core import config
 from classification_model.processing.features import Winsorizer
-
-sys.path.append(
-    # "//Users//irinakim//Documents//ML_Deployment//die_casting//"
-    "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/"
-)
 
 die_casting_pipeline = Pipeline(
     steps=[

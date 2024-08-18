@@ -16,9 +16,8 @@ from sklearn.model_selection import train_test_split
 
 from classification_model.config.core import config
 from classification_model.predict import make_prediction
-from classification_model.processing.data_manager import (  # load_dataset,
-    _load_raw_dataset,
-    pre_pipeline_preparation,
+from classification_model.processing.data_manager import (  # _load_raw_dataset,; pre_pipeline_preparation,
+    load_dataset,
     replace_nan_with_median,
 )
 
@@ -27,9 +26,7 @@ from classification_model.processing.data_manager import (  # load_dataset,
 
 @pytest.fixture
 def sample_input_data():
-    data = pre_pipeline_preparation(
-        dataframe=_load_raw_dataset(file_name=config.app_config.raw_data_file)
-    )
+    data = load_dataset(file_name=config.app_config.raw_data_file)
 
     _, X_test, _, y_test = train_test_split(
         data[config.model_config.features],

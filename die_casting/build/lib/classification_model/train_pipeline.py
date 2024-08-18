@@ -23,7 +23,7 @@ def run_training() -> None:
         random_state=config.model_config.random_state,
     )
     y_train = replace_nan_with_median(y_train)
-    y_test = replace_nan_with_median(y_test)
+    # y_test = replace_nan_with_median(y_test)
 
     die_casting_pipeline.fit(X_train, y_train)
 

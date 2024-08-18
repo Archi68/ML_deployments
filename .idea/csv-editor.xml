@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\titanic_dataset\classification_model\datasets\raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
