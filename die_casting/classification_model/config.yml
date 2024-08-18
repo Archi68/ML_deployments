@@ -3,12 +3,6 @@ raw_data_file: DieCasting_Raw_Data.csv
 pipeline_name: DieCasting_classification_model
 pipeline_save_file: DieCasting_classification_model_output_v
 
-#app_config:
-#  package_name: classification_model
-#  raw_data_file: DieCasting_Raw_Data.csv
-#  pipeline_save_file: DieCasting_classification_model_output_v
-
-#model_config:
 target: Machine_Status
 
 features:

@@ -15,7 +15,7 @@ classification_model/processing/__init__.py
 classification_model/processing/data_manager.py
 classification_model/processing/features.py
 classification_model/processing/validation.py
-classification_model/trained_models/DieCasting_classification_model_output_v0.0.2.pkl
+classification_model/trained_models/DieCasting_classification_model_output_v0.0.3.pkl
 classification_model/trained_models/__init__.py
 die_casting_classification_model.egg-info/PKG-INFO
 die_casting_classification_model.egg-info/SOURCES.txt
