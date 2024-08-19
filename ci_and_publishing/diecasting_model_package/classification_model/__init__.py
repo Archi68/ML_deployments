@@ -1,9 +1,3 @@
-import sys
-
-sys.path.append(
-    "C:\\Users\\USER\\OneDrive\\Docs\\KV_DW_JL_5\\ML_deployments\\die_casting\\"
-)
-
 import logging
 
 from classification_model.config.core import PACKAGE_ROOT, config

@@ -1,10 +1,3 @@
-import sys
-
-sys.path.append(
-    "//Users//irinakim//Documents//ML_Deployment//die_casting//"
-    "C:/Users/USER/OneDrive/Docs/KV_DW_JL_5/ML_deployments/die_casting/"
-)
-
 import pandas as pd
 import pytest
 from sklearn.model_selection import train_test_split
