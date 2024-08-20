@@ -53,14 +53,10 @@ def setup_app_logging(config: Settings) -> None:
     for logger_name in LOGGERS:
         logging_logger = logging.getLogger(logger_name)
 
-        logging_logger.handler = [InterseptHandler(level=config.logging.LOGGING_LEVEL)]
+        logging_logger.handlers = [InterseptHandler(level=config.logging.LOGGING_LEVEL)]
 
     logger.configure(
-        handlers=[{
-            "sink": sys.stderr,
-            "level": config.logging.LOGGING_LEVEL
-        }]
-
+        handlers=[{"sink": sys.stderr, "level": config.logging.LOGGING_LEVEL}]
     )
 
 

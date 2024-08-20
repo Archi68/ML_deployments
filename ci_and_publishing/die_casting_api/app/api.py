@@ -18,9 +18,7 @@ api_router = APIRouter()
 @api_router.get("/health", response_model=schemas.Health, status_code=200)
 def health() -> dict:
     health = schemas.Health(
-        name=settings.PROJECT_NAME,
-        api_version=__version__,
-        model_version=model_version
+        name=settings.PROJECT_NAME, api_version=__version__, model_version=model_version
     )
 
     return health.dict()
@@ -33,9 +31,9 @@ async def predict(input_data: schemas.MultipleDieCastingDataInputs) -> Any:
     logger.info(f"Making prediction on inputs: {input_data.inputs[:2]}")
     results = make_prediction(input_data=input_df.replace({np.nan: None}))
 
-    if not isinstance(results.get('predictions'), list):
+    if not isinstance(results.get("predictions"), list):
         # Predictions must be a list
-        results['predictions'] = list(results.get('predictions'))
+        results["predictions"] = list(results.get("predictions"))
 
     if results["errors"] is not None:
         logger.warning(f"Prediction validation error: {results.get('errors')}")
