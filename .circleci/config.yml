@@ -25,7 +25,7 @@ jobs:
     test_app:
         executor:
         <<: *defaults
-        working_directory: ~/project/ci_and_publishing/houseprice_api
+        working_directory: ~/project/ci_and_publishing/die_casting_api
         steps:
             - checkout:
                 path: ~/project
@@ -48,20 +48,16 @@ jobs:
             - run:
                 name: Deploy to Railway App (You must set RAILWAY_TOKEN env var)
                 command: |
-                    cd ci_and_publishing/houseprice_api && railway up --detach --service innovative-connection
+                    cd ci_and_publishing/die_casting_api && railway up --detach --service serene-reflection
 
-    test_and_upload_regression_model:
+    test_and_upload_classification_model:
         executor:
         <<: *defaults
-        working_directory: ~/project/ci_and_publishing/model_package
+        working_directory: ~/project/ci_and_publishing/diecasting_model_package
         steps:
             - checkout:
                 path: ~/project
             - *prepare_tox
-            - run:
-                name: Fetch the data
-                command: |
-                    tox -e fetch_data
             - run:
                 name: Test the model
                 command: |
@@ -92,7 +88,7 @@ jobs:
             - run:
                 name: Build and Dockerfile
                 command: |
-                    cd deploying_with_containers && railway up --detach --service innovative-connection
+                    cd deploying_with_containers && railway up --detach --service serene-reflection
 
 tags_only: &tags_only
     filters:
@@ -115,7 +111,7 @@ workflows:
                             - main
                             - demo
               # upload after git tags are created
-            - test_and_upload_regression_model:
+            - test_and_upload_classification_model:
                 <<: *tags_only
 
 

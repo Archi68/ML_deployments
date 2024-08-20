@@ -2,7 +2,7 @@ jupyter_notebooks*
 */env*
 */venv*
 .circleci*
-packages/regression_model
+packages/classification_model
 *.env
 *.log
 .git
