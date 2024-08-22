@@ -1,6 +1,5 @@
 
 --extra-index-url=${PIP_EXTRA_INDEX_URL}
-
 uvicorn>=0.20.0,<0.30.0
 pandas==2.0.2
 fastapi>=0.88.0,<1.0.0
