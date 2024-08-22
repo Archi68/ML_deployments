@@ -10,11 +10,7 @@ ADD ./die_casting_api /opt/die_casting_api
 RUN pip install --upgrade pip
 RUN pip install -r /opt/die_casting_api/requirements.txt
 
-<<<<<<< Updated upstream
-RUN sudo chmod +x /opt/houseprice_api/run.sh
-=======
 RUN chmod +x /opt/die_casting_api/run.sh
->>>>>>> Stashed changes
 
 RUN chown -R ml-api-user:ml-api-user ./
 

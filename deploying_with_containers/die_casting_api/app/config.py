@@ -42,7 +42,7 @@ class InterseptHandler(logging.Handler):
             frame = cast(FrameType, frame.f_back)
             depth += 1
 
-        logger.opt(epth=depth, exception=record.exc_info).log(
+        logger.opt(depth=depth, exception=record.exc_info).log(
             level, record.getMessage()
         )
 
