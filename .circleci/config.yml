@@ -100,9 +100,9 @@ jobs:
             - run: npm i -g @railway/cli
 
             - run:
-                name: Build and Dockerfile
+                name: Build and Deploy docker container to Railway
                 command: |
-                    cd deploying_with_containers && railway up --detach
+                    cd deploying_with_containers && railway up --detach --service serene-reflection
 
 tags_only: &tags_only
     filters:
